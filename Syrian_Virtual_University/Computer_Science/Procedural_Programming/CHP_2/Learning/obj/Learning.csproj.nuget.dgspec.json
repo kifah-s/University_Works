@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\# kifah #\\Ambition\\My GitHub Account\\University_Works\\Syrian_Virtual_University\\Computer_Science\\Procedural_Programming\\CHP_2\\Learning\\Learning.csproj": {}
+  },
+  "projects": {
+    "D:\\# kifah #\\Ambition\\My GitHub Account\\University_Works\\Syrian_Virtual_University\\Computer_Science\\Procedural_Programming\\CHP_2\\Learning\\Learning.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\# kifah #\\Ambition\\My GitHub Account\\University_Works\\Syrian_Virtual_University\\Computer_Science\\Procedural_Programming\\CHP_2\\Learning\\Learning.csproj",
+        "projectName": "Learning",
+        "projectPath": "D:\\# kifah #\\Ambition\\My GitHub Account\\University_Works\\Syrian_Virtual_University\\Computer_Science\\Procedural_Programming\\CHP_2\\Learning\\Learning.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "D:\\# kifah #\\Ambition\\My GitHub Account\\University_Works\\Syrian_Virtual_University\\Computer_Science\\Procedural_Programming\\CHP_2\\Learning\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
