@@ -1,0 +1,3 @@
+# Syrian Virtual University ..
+
+The Syrian Virtual University (SVU) is a Syrian educational institution established by the Syrian Ministry of Higher Education. It provides virtual education (using the Internet) to students from around the world. It was established on 2 September 2002 and is the first virtual education institution in the region, and as of 2006, remains the only one. The goals of the SVU include offering education to those who want to learn but cannot afford to do so by going to a "brick and mortar" university. It is headquartered at the Ministry of Higher Education building, Damascus. Students can study online, but they should make exams in one of the centres accredited by the University inside and outside Syria.
