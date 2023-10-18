@@ -143,4 +143,87 @@
 
 
 
+// ------------------------------------------------------------------------------------------- 
+
+// * >>> .......... Wandering through array  .......... <<<
+
+// * Arrays are characterized by direct access or random access,
+// * which means that any element in the array can be accessed directly without going through the rest of the elements.
+// * The random access feature is quite appropriate when we want to perform some manipulation by inserting, assigning,
+// * using, comparing...etc. on the value of a specific element in the array.
+// * However, if our desire is to perform some manipulation of the values of the array as a whole or a partial set of it,
+// * then using The random or direct access feature is not feasible from a programming perspective.
+
+
+
+
+// * Create array.
+// int[] sales = { 10, 25, 33, 8, 11 };
+
+// * Print array elements.
+// Console.WriteLine(sales[0]);
+// Console.WriteLine(sales[1]);
+// Console.WriteLine(sales[2]);
+// Console.WriteLine(sales[3]);
+// Console.WriteLine(sales[4]);
+// Console.WriteLine();
+
+// * ----------------------------------------
+
+
+// * Create array.
+// int[] sales = { 10, 25, 33, 8, 11 };
+
+// * Print array elements.
+// for(int i = 0; i < 5; i++)
+// {
+//     Console.WriteLine(sales[i]);
+// }
+// Console.WriteLine();
+
+
+
+// * ----------------------------------------
+
+
+// * Create array.
+// int[] sales = { 10, 25, 33, 8, 11 };
+
+
+// * Create variable for storage array length.
+// int arrLen = sales.Length;
+
+// * Print array elements.
+// for(int i = 0; i < arrLen; i++)
+// {
+//     Console.WriteLine(sales[i]);
+// }
+// Console.WriteLine();
+
+
+
+
+// * ----------------------------------------
+
+
+
+
+// * Create array.
+// int[] sales = { 10, 25, 33, 8, 11 };
+
+// * Print array elements.
+// foreach (int i in sales)
+// {
+//     Console.WriteLine(i);
+// }
+// Console.WriteLine();
+
+
+
+
+// * ----------------------------------------
+
+
+
+
 
