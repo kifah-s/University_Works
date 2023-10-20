@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Syrian_Virtual_University", "Syrian_Virtual_University", "{A16A5789-5077-4AB4-88A9-517C3A4D2244}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Computer_Science", "Computer_Science", "{0DEDCD75-AB01-4759-928B-72827A231AEA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CHP_0_Template", "CHP_0_Template", "{7D6275C4-A44C-45C1-9771-E33E47C7DF5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learning", "Syrian_Virtual_University\Computer_Science\CHP_0_Template\Learning\Learning.csproj", "{B6B81731-022C-4982-8C11-7FA5D4897DFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Procedural_Programming", "Procedural_Programming", "{B426CC69-791E-45E2-9C47-956A6F2E38E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CHP_1", "CHP_1", "{FA1BDE72-E72D-4D3D-B5DA-0DA19BB854DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learning", "Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1\Learning\Learning.csproj", "{082A6681-8E29-48D3-9DB9-ECE9AD5F0BB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CHP_2", "CHP_2", "{5036E226-E369-4F4D-8F28-DAFEE3AB40A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learning", "Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_2\Learning\Learning.csproj", "{0C145527-14CC-42B9-91C2-7BB90A436380}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6B81731-022C-4982-8C11-7FA5D4897DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B81731-022C-4982-8C11-7FA5D4897DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B81731-022C-4982-8C11-7FA5D4897DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B81731-022C-4982-8C11-7FA5D4897DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{082A6681-8E29-48D3-9DB9-ECE9AD5F0BB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{082A6681-8E29-48D3-9DB9-ECE9AD5F0BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{082A6681-8E29-48D3-9DB9-ECE9AD5F0BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{082A6681-8E29-48D3-9DB9-ECE9AD5F0BB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C145527-14CC-42B9-91C2-7BB90A436380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C145527-14CC-42B9-91C2-7BB90A436380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C145527-14CC-42B9-91C2-7BB90A436380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C145527-14CC-42B9-91C2-7BB90A436380}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0DEDCD75-AB01-4759-928B-72827A231AEA} = {A16A5789-5077-4AB4-88A9-517C3A4D2244}
+		{7D6275C4-A44C-45C1-9771-E33E47C7DF5F} = {0DEDCD75-AB01-4759-928B-72827A231AEA}
+		{B6B81731-022C-4982-8C11-7FA5D4897DFF} = {7D6275C4-A44C-45C1-9771-E33E47C7DF5F}
+		{B426CC69-791E-45E2-9C47-956A6F2E38E2} = {0DEDCD75-AB01-4759-928B-72827A231AEA}
+		{FA1BDE72-E72D-4D3D-B5DA-0DA19BB854DE} = {B426CC69-791E-45E2-9C47-956A6F2E38E2}
+		{082A6681-8E29-48D3-9DB9-ECE9AD5F0BB0} = {FA1BDE72-E72D-4D3D-B5DA-0DA19BB854DE}
+		{5036E226-E369-4F4D-8F28-DAFEE3AB40A7} = {B426CC69-791E-45E2-9C47-956A6F2E38E2}
+		{0C145527-14CC-42B9-91C2-7BB90A436380} = {5036E226-E369-4F4D-8F28-DAFEE3AB40A7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {491EA84E-E58E-41FA-847B-1E8C13DA82D2}
+	EndGlobalSection
+EndGlobal
