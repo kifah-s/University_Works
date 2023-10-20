@@ -161,13 +161,90 @@
 //* Example - 2: Entering student grades in an Introduction to Programming course,
 //* then finding the lowest grade, the highest grade, and the arithmetic average of the class grades.
 
+//* Create variables.
+// int n, max, min, sum, avg;
+// Console.Write("Enter Students Count: ");
+// n = Int32.Parse(Console.ReadLine());
 
+// Console.WriteLine();
 
+//* dynamically define students count.
+// int[] grades = new int[n];
 
+//* read students grades.
+// Console.WriteLine("Enter Students Grades: ");
+// for (int index = 0; index < grades.Length; index++)
+// {
+//     Console.Write("Student " + (index + 1) + ": ");
+//     grades[index] = Int32.Parse(Console.ReadLine());
+// }
 
+//* finding max,min,average.
+// max = min = sum = grades[0];
+// for (int index = 1; index < grades.Length; index++)
+// {
+//     if (grades[index] > max)
+//     {
+//         max = grades[index];
+//     }
+//     if (grades[index] < min)
+//     {
+//         min = grades[index];
+//     }
+//     sum += grades[index];
+// }
+// avg = sum / n;
 
+// Console.WriteLine();
 
+//* printing students grades.
+// Console.WriteLine("Students Grades:");
+// foreach (int grad in grades)
+// {
+//     Console.Write(grad + " ");
+// }
 
+// Console.WriteLine();
 
+//* printing max,min,average
+// Console.WriteLine("max = {0} \t min= {1} \t avg= {2}", max, min, avg);
+
+//* Note: In this example, we defined the number of elements of an array dynamically,
+//* and we also used more than one formula to navigate through the elements of the array and perform operations on them.
 
 // __________________________________________________________________________________________________________________________________________________________
+
+//* >>> Multidimensional arrays <<<
+
+//* Examples:
+// int[ , ] arr2d; // two-dimensional array.
+// int[ , , ] arr3d; // three-dimensional array.
+// int[ , , , ] arr4d; // four-dimensional array.
+// int[ , , , , ] arr5d; // five-dimensional array.
+//* Note: The number of dimensions of an array is equal to the number of separators plus one.
+
+//* ----------------------------------------
+
+//* >>> Two-dimensional array <<<
+
+//* C# supports two types of binary arrays:
+//   - Rectangular or square arrays.
+//   - Jagged arrays.
+
+//* All lines of a matrix are of equal length (and so are all columns),
+//* so...Represent it in the form of a table.
+
+//* Examples:
+//* declaring and initializing 2-d array.
+// int[,] arr2d = new int[3, 2] {{1, 2},
+//                               {3, 4},
+//                               {5, 6}};
+
+//* OR ..
+// int[,] arr2d2 = {{1, 2},
+//                  {3, 4},
+//                  {5, 6}};
+
+//* ----------------------------------------
+
+//* Accessing any element in an array requires knowing the line index and the column index to which it belongs.
