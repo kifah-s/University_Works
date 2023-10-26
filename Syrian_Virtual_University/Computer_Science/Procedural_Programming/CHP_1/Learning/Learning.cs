@@ -352,3 +352,56 @@
 //* ----------------------------------------
 
 
+//* Example_2:
+//* - Using array to build a student grade table.
+//* - And the grade point average for each student.
+//* - To solve we use two array:
+//* - The students array stores student names.
+//* - The grades array stores grades and modifiers.
+//* - And we'll synchronize them.
+
+//* Declaring arrays.
+// string[] students = new string[5];
+// double[,] grades = new double[5, 4];
+
+// double sum;
+
+// //* reading data and calculating averages.
+// for (int i = 0; i < 5; i++)
+// {
+//     Console.Write("ENTER STUDENT Num.{0} NAME:", i + 1);
+//     students[i] = Console.ReadLine();
+//     sum = 0;
+//     Console.WriteLine("ENTERING GRADES FOR STUDENT No.{0}", i + 1);
+
+//     for (int j = 0; j < 3; j++)
+//     {
+//         grades[i, j] = double.Parse(Console.ReadLine());
+//         sum += grades[i, j];
+//     }
+//     grades[i, 3] = sum / 4;
+// }
+
+// Console.WriteLine();
+
+// //* printing grades book.
+// Console.WriteLine("CLASS GRAD BOOK");
+// Console.WriteLine("Name\tMark1\tMark2\tMark3\tAverage");
+// for (int i = 0; i < 5; i++)
+// {
+//     Console.Write(students[i]);
+//     Console.Write("\t");
+//     for (int j = 0; j < 4; j++)
+//     {
+//         Console.Write(grades[i, j] + "\t");
+//     }
+//     Console.WriteLine();
+// }
+
+
+// __________________________________________________________________________________________________________________________________________________________
+
+
+//* Exercises and activities:
+
+//* Exercises - 1:
