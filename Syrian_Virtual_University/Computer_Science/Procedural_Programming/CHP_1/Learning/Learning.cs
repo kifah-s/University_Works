@@ -231,6 +231,8 @@
 //   - Rectangular or square arrays.
 //   - Jagged arrays.
 
+//* Rectangular or square arrays:
+
 //* All lines of a matrix are of equal length (and so are all columns),
 //* so...Represent it in the form of a table.
 
@@ -248,3 +250,29 @@
 //* ----------------------------------------
 
 //* Accessing any element in an array requires knowing the line index and the column index to which it belongs.
+// int[,] arr2d = new int[3, 2] {{ 1, 2 },
+//                               { 3, 4 },
+//                               { 5, 6 } };
+
+// int ele0 = arr2d[0, 0]; //returns 1
+// Console.WriteLine(ele0);
+
+// int ele1 = arr2d[0, 1]; //returns 2
+// Console.WriteLine(ele1);
+
+// int ele2 = arr2d[1, 0]; //returns 3
+// Console.WriteLine(ele2);
+
+// int ele3 = arr2d[1, 1]; //returns 4
+// Console.WriteLine(ele3);
+
+// int ele4 = arr2d[2, 0]; //returns 5
+// Console.WriteLine(ele4);
+
+// int ele5 = arr2d[2, 1]; //returns 6
+// Console.WriteLine(ele5);
+
+//! Note: In a special case, if the number of lines and columns are equal, the array is said to be square.
+
+//* ----------------------------------------
+
