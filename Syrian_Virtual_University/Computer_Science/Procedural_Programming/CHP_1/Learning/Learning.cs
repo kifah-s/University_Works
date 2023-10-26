@@ -231,9 +231,9 @@
 //   - Rectangular or square arrays.
 //   - Jagged arrays.
 
-//* Rectangular or square arrays:
+//* 1 - Rectangular or square arrays:
 
-//* All lines of a matrix are of equal length (and so are all columns),
+//* All lines of a array are of equal length (and so are all columns),
 //* so...Represent it in the form of a table.
 
 //* Examples:
@@ -275,4 +275,80 @@
 //! Note: In a special case, if the number of lines and columns are equal, the array is said to be square.
 
 //* ----------------------------------------
+
+//* 2 - Jagged arrays:
+
+//* In this type of array, the lines of the array are of varying length,
+//* meaning each line has a different number of columns.
+
+//* Examples:
+//* Exa_1:
+// int[][] jagged = { new int[] { 1, 2 },
+//                    new int[] { 3 },
+//                    new int[] { 4, 5, 6 } };
+
+
+
+//* Exa_2:
+// int[][] c;
+// c = new int[2][]; // create 2 rows
+// c[0] = new int[5]; // create 5 columns for row 0
+// c[1] = new int[3]; // create 3 columns for row 1
+
+
+//* ----------------------------------------
+
+//* Examples of using a two-dimensional array:
+
+//* Example_1:
+//* In the following example we do the following:
+//*     - Declare a rectangular array and a jagged array.
+//*     - And give them initial values.
+//*     - We then loop through these two arrays and print their values
+//!     Note: The for and foreach commands are used to illustrate how each can be used to navigate a binary array.
+
+//* Declaring and Initializing Rectangular Array.
+// int[,] rectangular = { { 1, 2, 3 },
+//                        { 4, 5, 6 } };
+
+//* Declaring and Initializing jagged Array.
+// int[][] jagged = { new int[] { 1, 2 },
+//                    new int[] { 3 },
+//                    new int[] { 4, 5, 6 } };
+
+//* displays array rectangular by row.
+// Console.WriteLine("Values in the rectangular array by row are");
+
+//* loop through array's rows.
+// for (int row = 0; row < 2; ++row)
+// {
+//     //* loop through columns of current row.
+//     for (int column = 0; column < 3; ++column)
+//     {
+//         Console.Write("{0} ", rectangular[row, column]);
+//     }
+//     Console.WriteLine(); //* start new line of output.
+// } //* end outer for.
+
+
+// Console.WriteLine(); //* output a blank line.
+
+
+//* displays array jagged by row.
+// Console.WriteLine("Values in the jagged array by row are");
+
+//* loop through each row.
+// foreach (int[] row in jagged)
+// {
+//     //* loop through each element in current row.
+//     foreach (int element in row)
+//     {
+//         Console.Write("{0} ", element);
+//     }
+//     Console.WriteLine(); //* start new line of output
+// } //* end outer foreach
+
+
+//* ----------------------------------------
+
 
