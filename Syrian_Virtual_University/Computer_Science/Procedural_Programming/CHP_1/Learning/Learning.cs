@@ -441,7 +441,6 @@
 // }
 
 
-
 // //* printing grades book.
 // Console.WriteLine("CLASS GRAD BOOK");
 // Console.WriteLine("Name\tMark1\tMark2\tMark3\tAverage\t\tresult");
@@ -457,7 +456,70 @@
 //     Console.WriteLine();
 // }
 
+
 //* ----------------------------------------
 
 
 //* Exercises - 2:
+//* Develop the program written in Example No. 2
+//* of the previous paragraph so that it calculates the success rate for the total class students.
+
+// //* Declaring arrays.
+// string[] students = new string[5];
+// double[,] grades = new double[5, 4];
+// string[] result = new string[5];
+
+// double sum;
+// double overall_success_rate = 0;
+
+// //* reading data and calculating averages.
+// for (int i = 0; i < 1; i++)
+// {
+//     Console.Write("ENTER STUDENT Num.{0} NAME:", i + 1);
+//     students[i] = Console.ReadLine();
+//     sum = 0;
+//     Console.WriteLine("ENTERING GRADES FOR STUDENT No.{0}", i + 1);
+
+//     for (int j = 0; j < 3; j++)
+//     {
+//         grades[i, j] = double.Parse(Console.ReadLine());
+//         sum += grades[i, j];
+//         overall_success_rate += grades[i, j];
+//     }
+//     grades[i, 3] = sum / 3;
+//     overall_success_rate /= 5;
+
+//     if (grades[i, 3] < (100 * 60) / 100)
+//     {
+//         result[i] = "Failed";
+//     }
+//     else
+//     {
+//         result[i] = "Successful";
+//     }
+// }
+
+
+// //* printing grades book.
+// Console.WriteLine("CLASS GRAD BOOK");
+// Console.WriteLine("Name\tMark1\tMark2\tMark3\tAverage\t\tresult");
+// for (int i = 0; i < 5; i++)
+// {
+//     Console.Write(students[i]);
+//     Console.Write("\t");
+//     for (int j = 0; j < 4; j++)
+//     {
+//         Console.Write(grades[i, j] + "\t");
+//     }
+//     Console.Write("\t" + result[i]);
+//     Console.WriteLine();
+//     Console.WriteLine();
+// }
+// Console.Write("Overall success rate is: " + "{00}", overall_success_rate + "%");
+// Console.WriteLine();
+// Console.WriteLine();
+
+
+//* ----------------------------------------
+
+
