@@ -524,3 +524,58 @@
 
 
 //* Exercises - 3:
+
+//* Write a program that allows entering elements into a one-dimensional array consisting of 10 elements,
+//* and then inserting an element somewhere.
+//* Note: The value to be inserted and the insertion location are entered by the user.
+
+// //* Create array.
+// int[] myArray = new int[10];
+
+// //* Receive values from user.
+// int number;
+// Console.WriteLine("Please enter elements of array: ");
+// for (int i = 0; i < 10; i++)
+// {
+//     Console.Write("Element " + (i + 1) + ": ");
+//     number = int.Parse(Console.ReadLine());
+//     myArray[i] = number;
+// }
+
+// Console.WriteLine();
+
+// //* Print array.
+// Console.WriteLine("Elements of array is: ");
+// for (int i = 0; i < myArray.Length; i++)
+// {
+//     Console.Write(myArray[i] + " ");
+// }
+
+// Console.WriteLine();
+// Console.WriteLine();
+
+// //* Add element to array.
+// Console.Write("Please enter another element you want to add to the array: ");
+// number = int.Parse(Console.ReadLine());
+
+// Console.Write("Please enter the index where you want to add element: ");
+// int index = int.Parse(Console.ReadLine());
+
+// //* Convert array to list.
+// List<int> myList = myArray.ToList();
+// myList.Insert(index, number);
+
+// Console.WriteLine();
+
+// //* Print array.
+// Console.WriteLine("Elements of array is: ");
+// for (int i = 0; i < myList.Count; i++)
+// {
+//     Console.Write(myList[i] + " ");
+// }
+
+
+//* ----------------------------------------
+
+
+//* Exercises - 4:
