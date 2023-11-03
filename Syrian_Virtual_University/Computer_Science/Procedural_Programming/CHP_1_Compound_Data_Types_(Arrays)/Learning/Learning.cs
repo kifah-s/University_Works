@@ -473,7 +473,7 @@
 // double overall_success_rate = 0;
 
 // //* reading data and calculating averages.
-// for (int i = 0; i < 1; i++)
+// for (int i = 0; i < 5; i++)
 // {
 //     Console.Write("ENTER STUDENT Num.{0} NAME:", i + 1);
 //     students[i] = Console.ReadLine();
@@ -523,3 +523,4 @@
 //* ----------------------------------------
 
 
+//* Exercises - 3:

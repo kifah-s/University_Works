@@ -26,3 +26,17 @@ D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_Universi
 D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1\Learning\obj\Debug\net7.0\Learning.pdb
 D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1\Learning\obj\Debug\net7.0\Learning.genruntimeconfig.cache
 D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1\Learning\obj\Debug\net7.0\ref\Learning.dll
+D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\bin\Debug\net7.0\Learning.exe
+D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\bin\Debug\net7.0\Learning.deps.json
+D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\bin\Debug\net7.0\Learning.runtimeconfig.json
+D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\bin\Debug\net7.0\Learning.dll
+D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\bin\Debug\net7.0\Learning.pdb
+D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\obj\Debug\net7.0\Learning.GeneratedMSBuildEditorConfig.editorconfig
+D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\obj\Debug\net7.0\Learning.AssemblyInfoInputs.cache
+D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\obj\Debug\net7.0\Learning.AssemblyInfo.cs
+D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\obj\Debug\net7.0\Learning.csproj.CoreCompileInputs.cache
+D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\obj\Debug\net7.0\Learning.dll
+D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\obj\Debug\net7.0\refint\Learning.dll
+D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\obj\Debug\net7.0\Learning.pdb
+D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\obj\Debug\net7.0\Learning.genruntimeconfig.cache
+D:\# kifah #\Ambition\My GitHub Account\University_Works\Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\obj\Debug\net7.0\ref\Learning.dll
