@@ -579,3 +579,56 @@
 
 
 //* Exercises - 4:
+
+//* We want to compare two matrices according to the following mechanism.
+//* Construct the comparison result array so that the value of each element is of the following form:
+//* 0 if the element A and the opposites are equal.
+//* 1 if the first is greater than the second.
+//* -1 if the first is smaller than the second.
+//* Since the three matrices must have the same dimensions.
+//* Write a program that enters the values of two array, finds the array that compares them, and prints the results.
+
+// Create function for Receive values from user. 
+static int[,] GetNumbers()
+{
+    int counter = 1, num = 0;
+
+    int[,] numbers = new int[3, 4];
+
+    Console.WriteLine("Please enter elements of array: ");
+
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            Console.Write("Element " + counter + ": ");
+            num = int.Parse(Console.ReadLine());
+            numbers[i, j] = num;
+            counter++;
+        }
+    }
+
+    return numbers;
+}
+
+
+//* Create arrays.
+int[,] multiArray1;
+int[,] multiArray2;
+int[,] multiArray3;
+
+multiArray1 = GetNumbers();
+multiArray2 = GetNumbers();
+
+Console.WriteLine();
+
+//* Print Array.
+Console.WriteLine("Elements of array is: ");
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 4; j++)
+    {
+        Console.Write(multiArray1[i, j] + " ");
+    }
+    Console.WriteLine();
+}
