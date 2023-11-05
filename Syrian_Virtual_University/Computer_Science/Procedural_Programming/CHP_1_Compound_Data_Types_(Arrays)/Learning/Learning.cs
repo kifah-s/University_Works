@@ -588,52 +588,107 @@
 //* Since the three matrices must have the same dimensions.
 //* Write a program that enters the values of two array, finds the array that compares them, and prints the results.
 
-// Create function for Receive values from user. 
-static int[,] GetNumbers()
-{
-    int counter = 1, num = 0;
+// //* >>>>>>>>>> Functions <<<<<<<<<< //
 
-    int[,] numbers = new int[3, 4];
+// //* Create function for Receive values from user. 
+// static int[,] GetNumbersFun()
+// {
+//     int counter = 1, num = 0;
 
-    Console.WriteLine("Please enter elements of array: ");
+//     int[,] numbers = new int[3, 4];
 
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j < 4; j++)
-        {
-            Console.Write("Element " + counter + ": ");
-            num = int.Parse(Console.ReadLine());
-            numbers[i, j] = num;
-            counter++;
-        }
-    }
+//     for (int i = 0; i < 3; i++)
+//     {
+//         for (int j = 0; j < 4; j++)
+//         {
+//             Console.Write("Element " + counter + ": ");
+//             num = int.Parse(Console.ReadLine());
+//             numbers[i, j] = num;
+//             counter++;
+//         }
+//     }
 
-    return numbers;
-}
+//     return numbers;
+// }
+
+// //* Create function for print array.
+// static void printFun(int[,] x)
+// {
+//     for (int i = 0; i < 3; i++)
+//     {
+//         for (int j = 0; j < 4; j++)
+//         {
+//             Console.Write(x[i, j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// //* Create function for comparison.
+// static int[,] comparisonFun(int[,] x, int[,] y)
+// {
+//     int[,] z = new int[3, 4];
+
+//     for (int i = 0; i < 3; i++)
+//     {
+//         for (int j = 0; j < 4; j++)
+//         {
+//             if (x[i, j] == y[i, j])
+//             {
+//                 // z = new int[3, 4];
+//                 z[i, j] = 0;
+//             }
+//             else if(x[i, j] > y[i, j])
+//             {
+//                 // z = new int[3, 4];
+//                 z[i, j] = 1;
+//             }
+//             else if(x[i, j] < y[i, j])
+//             {
+//                 // z = new int[3, 4];
+//                 z[i, j] = -1;
+//             }
+//         }
+//     }
+
+//     return z;
+// }
+
+// //* >>>>>>>>>> End Functions <<<<<<<<<< //
 
 
-//* Create arrays.
-int[,] multiArray1;
-int[,] multiArray2;
-int[,] multiArray3;
 
-multiArray1 = GetNumbers();
-multiArray2 = GetNumbers();
+// //* Create arrays.
+// int[,] multiArray1;
+// int[,] multiArray2;
+// int[,] multiArray3;
 
-Console.WriteLine();
+// //* Receive values from user.
+// Console.WriteLine("Please enter elements of array 1: ");
+// multiArray1 = GetNumbersFun();
 
-//* Print Array.
-Console.WriteLine("Elements of array is: ");
-for (int i = 0; i < 3; i++)
-{
-    for (int j = 0; j < 4; j++)
-    {
-        Console.Write(multiArray1[i, j] + " ");
-    }
-    Console.WriteLine();
-}
+// Console.WriteLine();
+// Console.WriteLine();
 
-// ............................
+// Console.WriteLine("Please enter elements of array 2: ");
+// multiArray2 = GetNumbersFun();
 
+// Console.WriteLine();
+// Console.WriteLine();
+
+// //* comparison.
+// multiArray3 = comparisonFun(multiArray1, multiArray2);
 
 
+// //* Print comparison result.
+// Console.WriteLine("The comparison result is: ");
+// printFun(multiArray3);
+
+
+// Console.WriteLine();
+// Console.WriteLine();
+
+
+
+
+// __________________________________________________________________________________________________________________________________________________________
