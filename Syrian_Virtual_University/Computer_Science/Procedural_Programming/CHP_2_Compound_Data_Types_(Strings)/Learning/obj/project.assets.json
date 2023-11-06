@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\# kifah #\\Ambition\\My GitHub Account\\University_Works\\Syrian_Virtual_University\\Computer_Science\\Procedural_Programming\\CHP_2\\Learning\\Learning.csproj",
+      "projectUniqueName": "D:\\# kifah #\\Ambition\\My GitHub Account\\University_Works\\Syrian_Virtual_University\\Computer_Science\\Procedural_Programming\\CHP_2_Compound_Data_Types_(Strings)\\Learning\\Learning.csproj",
       "projectName": "Learning",
-      "projectPath": "D:\\# kifah #\\Ambition\\My GitHub Account\\University_Works\\Syrian_Virtual_University\\Computer_Science\\Procedural_Programming\\CHP_2\\Learning\\Learning.csproj",
+      "projectPath": "D:\\# kifah #\\Ambition\\My GitHub Account\\University_Works\\Syrian_Virtual_University\\Computer_Science\\Procedural_Programming\\CHP_2_Compound_Data_Types_(Strings)\\Learning\\Learning.csproj",
       "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "D:\\# kifah #\\Ambition\\My GitHub Account\\University_Works\\Syrian_Virtual_University\\Computer_Science\\Procedural_Programming\\CHP_2\\Learning\\obj\\",
+      "outputPath": "D:\\# kifah #\\Ambition\\My GitHub Account\\University_Works\\Syrian_Virtual_University\\Computer_Science\\Procedural_Programming\\CHP_2_Compound_Data_Types_(Strings)\\Learning\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config"
