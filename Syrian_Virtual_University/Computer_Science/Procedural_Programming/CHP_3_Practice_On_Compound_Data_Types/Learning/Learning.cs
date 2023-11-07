@@ -37,3 +37,50 @@
 
 //* -------------------------------------------------------------------------
 
+//* Exercise - 2 : Ohm law problem.
+//* Write a program that uses three one-dimensional arrays CURRENT, RESISTANCE, and VLOT to store the values of currents, resistors, and voltages, respectively.
+//* Enter values for the two arrays CURRENT and RESISTANCE and then calculate the values of the VOLT array as: VOLT[i] = CURRENT[i] * RESISTANCE[i]
+//* Print the values of the three arrays.
+
+// //* Declaring Storage structure.
+// float[] current = new float[10];
+// float[] resistance = new float[10];
+// float[] volt = new float[10];
+
+// //* Entering and Processing Values.
+// for (int i = 0; i < 10; i++)
+// {
+//     Console.Write("Current Value =");
+//     current[i] = float.Parse(Console.ReadLine());
+//     Console.Write("Resistance Value =");
+//     resistance[i] = float.Parse(Console.ReadLine());
+
+//     //* Calculating and storing volt value.
+//     volt[i] = current[i] * resistance[i];
+// }
+
+// //* Printing Results.
+// Console.Write("Resistances : ");
+// foreach (float r in resistance)
+// {
+//     Console.Write(r + "\t");
+// }
+// Console.WriteLine();
+
+// Console.Write("Currents : ");
+// foreach (float c in current)
+// {
+//     Console.Write(c + "\t");
+// }
+// Console.WriteLine();
+
+
+// Console.Write("Volts : ");
+// foreach (float v in volt)
+// {
+//     Console.Write(v + "\t");
+// }
+// Console.WriteLine();
+
+
+//* -------------------------------------------------------------------------
