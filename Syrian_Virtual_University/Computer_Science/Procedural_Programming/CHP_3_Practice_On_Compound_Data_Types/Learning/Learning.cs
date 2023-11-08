@@ -38,7 +38,7 @@
 //* -------------------------------------------------------------------------
 
 //* Exercise - 2 : Ohm law problem.
-//* Write a program that uses three one-dimensional arrays CURRENT, RESISTANCE, and VLOT to store the values of currents, resistors, and voltages, respectively.
+//* Write a program that uses three one-dimensional arrays CURRENT, RESISTANCE, and VOLT to store the values of currents, resistors, and voltages, respectively.
 //* Enter values for the two arrays CURRENT and RESISTANCE and then calculate the values of the VOLT array as: VOLT[i] = CURRENT[i] * RESISTANCE[i]
 //* Print the values of the three arrays.
 
@@ -84,3 +84,34 @@
 
 
 //* -------------------------------------------------------------------------
+
+
+//* Exercise - 3 : Table of trigonometric ratios.
+//* We want to create a table to store the trigonometric ratios of angles between 0 and 90 degrees,
+//* and then print it on the screen.
+//! Note: Make use of the methods of the predefined class Math.
+
+// //* Declaring Storage structure.
+// double[,] ratios = new double[91, 4];
+
+
+// //* Calculating and storing ratios.
+// for (int i = 0; i < 91; i++)
+// {
+//     ratios[i, 0] = i;
+//     ratios[i, 1] = Math.Sin(i);
+//     ratios[i, 2] = Math.Cos(i);
+//     ratios[i, 3] = Math.Tan(i);
+// }
+
+// //* Displaying Stored Values.
+// Console.WriteLine("x \t\t Sin(x) \t\t Cos(x) \t\t Tan(x)");
+// for (int i = 0; i < 91; i++)
+// {
+//     Console.WriteLine("{0} \t\t {1} \t\t {2} \t\t {3}", ratios[i, 0], ratios[i, 1], ratios[i, 2], ratios[i, 3]);
+// }
+
+
+//* -------------------------------------------------------------------------
+
+
