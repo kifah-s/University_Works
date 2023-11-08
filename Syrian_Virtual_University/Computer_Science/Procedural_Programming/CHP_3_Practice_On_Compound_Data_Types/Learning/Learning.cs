@@ -3,7 +3,7 @@
 
 //* >>>>>>>>>> Practice On Compound Data Types <<<<<<<<<< //
 
-//* Exercise - 1 : Problem of unary matrix evaluations.
+//* Exercise - 1 : Problem of unary array evaluations.
 //* The Meteorological Directorate wants to record daily rainfall rates over an entire year and make some assessments of them.
 //* required is to write a program that allows the following:
 //* - Recording daily rainfall.
@@ -166,3 +166,106 @@
 
 
 //* -------------------------------------------------------------------------
+
+//* Exercise - 5 : The problem of square arrays.
+//* This problem assumes the existence of a square array of integer values of a certain size,
+//* where the following operations are required to be performed:
+//* 1 - Enter values for array elements.
+//* 2 - Prints the values of array elements line by line.
+//* 3 - Calculate the sum of the values of the main diagonal elements.
+//* 4 - Find the array value in the secondary diagonal.
+//* 5 - Test whether a array is symmetric.
+
+//! Solution notes:
+//! A square array is a two-dimensional array with equal numbers of lines and columns. 
+//! If we have a square array with dimensions n × n, then:
+//!     - Major diagonal elements are elements in which the line index is equal to the column index.
+//!     - Secondary diagonal elements are elements in which the sum of the line and column index values equals n-1.
+//!     - A square matrix is symmetrical if the values of every two opposite elements with respect to the main diagonal are equal,
+//!       that is: x[i, j] = x[j, i].
+
+//* Declaring Variables.
+int[,] MAT = new int[4, 4];
+int i, j;
+
+
+// *Entering Array Elements.
+for (i = 0; i < 4; i++)
+{
+    for (j = 0; j < 4; j++)
+    {
+        Console.Write("MAT( " + i + " , " + j + " )=");
+        MAT[i, j] = Int32.Parse(Console.ReadLine());
+    }
+}
+
+
+//* Printing Array Elements.
+for (i = 0; i < 4; i++)
+{
+    for (j = 0; j < 4; j++)
+    {
+        Console.Write(MAT[i, j] + " ");
+    }
+    Console.WriteLine();
+}
+
+
+//* Finding Sum.
+int sum_diag = 0;
+for (i = 0; i < 4; i++)
+{
+    for (j = 0; j < 4; j++)
+    {
+        if (i == j)
+        {
+            sum_diag += MAT[i, j];
+        }
+    }
+}
+Console.WriteLine("MAIN DIAG SUM IS : " + sum_diag);
+
+
+//* Finding Max.
+int max = 0;
+for (i = 0; i < 4; i++)
+{
+    for (j = 0; j < 4; j++)
+    {
+        if (i + j == 3)
+        {
+            if (MAT[i, j] > max)
+            {
+                max = MAT[i, j];
+            }
+        }
+    }
+}
+Console.WriteLine("SECOND DIAG MAX IS : " + max);
+
+
+//* Testing Symmetric.
+bool symmetric = true;
+for (i = 0; i < 4; i++)
+{
+    for (j = 0; j < 4; j++)
+    {
+        if (MAT[i, j] != MAT[j, i])
+        {
+            symmetric = false;
+        }
+    }
+}
+if (symmetric == true)
+{
+    Console.WriteLine("ARRAY IS SYMMETRIC");
+}
+else
+{
+    Console.WriteLine("ARRAY IS NOT SYMMETRIC");
+}
+
+
+//* -------------------------------------------------------------------------
+
+
