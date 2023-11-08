@@ -115,3 +115,54 @@
 //* -------------------------------------------------------------------------
 
 
+//* Exercise - 4 : Problem calculating the sum of two arrays.
+//* Two arrays can be added by producing a array in which the value of each element is the sum of the two corresponding values.
+//* Since the three arrays must have the same dimensions.
+//* Write a program that enters the values of two arrays,
+//* finds the array expressing the result of their addition,
+//* and prints the results.
+
+// //* Declaring Storage structure.
+// int[,] mat1 = new int[4, 3];
+// int[,] mat2 = new int[4, 3];
+// int[,] mat3 = new int[4, 3];
+
+// //* Entering the 2 arrays and calculating sum.
+// for (int i = 0; i < 4; i++)
+// {
+//     for (int j = 0; j < 3; j++)
+//     {
+//         Console.Write("mat1[ " + i + " , " + j + " ]= ");
+//         mat1[i, j] = Int32.Parse(Console.ReadLine());
+
+//         Console.Write("mat2[ " + i + " , " + j + " ]= ");
+//         mat2[i, j] = Int32.Parse(Console.ReadLine());
+
+//         mat3[i, j] = mat1[i, j] + mat2[i, j];
+//     }
+// }
+
+// //* printing arrays.
+// Console.WriteLine("Mat1 =");
+// foreach (int row in mat1)
+// {
+//     Console.Write(row + " ");
+// }
+// Console.WriteLine();
+
+// Console.WriteLine("Mat2 =");
+// foreach (int row in mat2)
+// {
+//     Console.Write(row + " ");
+// }
+// Console.WriteLine();
+
+// Console.WriteLine("Mat3 =");
+// foreach (int row in mat3)
+// {
+//     Console.Write(row + " ");
+// }
+// Console.WriteLine();
+
+
+//* -------------------------------------------------------------------------
