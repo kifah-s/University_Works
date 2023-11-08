@@ -184,88 +184,127 @@
 //!     - A square matrix is symmetrical if the values of every two opposite elements with respect to the main diagonal are equal,
 //!       that is: x[i, j] = x[j, i].
 
-//* Declaring Variables.
-int[,] MAT = new int[4, 4];
-int i, j;
+// //* Declaring Variables.
+// int[,] MAT = new int[4, 4];
+// int i, j;
 
 
-// *Entering Array Elements.
-for (i = 0; i < 4; i++)
-{
-    for (j = 0; j < 4; j++)
-    {
-        Console.Write("MAT( " + i + " , " + j + " )=");
-        MAT[i, j] = Int32.Parse(Console.ReadLine());
-    }
-}
+// // *Entering Array Elements.
+// for (i = 0; i < 4; i++)
+// {
+//     for (j = 0; j < 4; j++)
+//     {
+//         Console.Write("MAT( " + i + " , " + j + " )=");
+//         MAT[i, j] = Int32.Parse(Console.ReadLine());
+//     }
+// }
 
 
-//* Printing Array Elements.
-for (i = 0; i < 4; i++)
-{
-    for (j = 0; j < 4; j++)
-    {
-        Console.Write(MAT[i, j] + " ");
-    }
-    Console.WriteLine();
-}
+// //* Printing Array Elements.
+// for (i = 0; i < 4; i++)
+// {
+//     for (j = 0; j < 4; j++)
+//     {
+//         Console.Write(MAT[i, j] + " ");
+//     }
+//     Console.WriteLine();
+// }
 
 
-//* Finding Sum.
-int sum_diag = 0;
-for (i = 0; i < 4; i++)
-{
-    for (j = 0; j < 4; j++)
-    {
-        if (i == j)
-        {
-            sum_diag += MAT[i, j];
-        }
-    }
-}
-Console.WriteLine("MAIN DIAG SUM IS : " + sum_diag);
+// //* Finding Sum.
+// int sum_diag = 0;
+// for (i = 0; i < 4; i++)
+// {
+//     for (j = 0; j < 4; j++)
+//     {
+//         if (i == j)
+//         {
+//             sum_diag += MAT[i, j];
+//         }
+//     }
+// }
+// Console.WriteLine("MAIN DIAG SUM IS : " + sum_diag);
 
 
-//* Finding Max.
-int max = 0;
-for (i = 0; i < 4; i++)
-{
-    for (j = 0; j < 4; j++)
-    {
-        if (i + j == 3)
-        {
-            if (MAT[i, j] > max)
-            {
-                max = MAT[i, j];
-            }
-        }
-    }
-}
-Console.WriteLine("SECOND DIAG MAX IS : " + max);
+// //* Finding Max.
+// int max = 0;
+// for (i = 0; i < 4; i++)
+// {
+//     for (j = 0; j < 4; j++)
+//     {
+//         if (i + j == 3)
+//         {
+//             if (MAT[i, j] > max)
+//             {
+//                 max = MAT[i, j];
+//             }
+//         }
+//     }
+// }
+// Console.WriteLine("SECOND DIAG MAX IS : " + max);
 
 
-//* Testing Symmetric.
-bool symmetric = true;
-for (i = 0; i < 4; i++)
-{
-    for (j = 0; j < 4; j++)
-    {
-        if (MAT[i, j] != MAT[j, i])
-        {
-            symmetric = false;
-        }
-    }
-}
-if (symmetric == true)
-{
-    Console.WriteLine("ARRAY IS SYMMETRIC");
-}
-else
-{
-    Console.WriteLine("ARRAY IS NOT SYMMETRIC");
-}
+// //* Testing Symmetric.
+// bool symmetric = true;
+// for (i = 0; i < 4; i++)
+// {
+//     for (j = 0; j < 4; j++)
+//     {
+//         if (MAT[i, j] != MAT[j, i])
+//         {
+//             symmetric = false;
+//         }
+//     }
+// }
+// if (symmetric == true)
+// {
+//     Console.WriteLine("ARRAY IS SYMMETRIC");
+// }
+// else
+// {
+//     Console.WriteLine("ARRAY IS NOT SYMMETRIC");
+// }
 
 
 //* -------------------------------------------------------------------------
 
 
+//* Exercise - 6 : The problem of arranging the list of students’ names alphabetically.
+//* We would like to enter the names of the students in the class,
+//* and then print a list of their names arranged alphabetically.
+
+// //* Declaring Storage structure.
+// string[] students = new string[10];
+
+
+// //* Entering Students Names.
+// for (int i = 0; i < students.Length; i++)
+// {
+//     students[i] = Console.ReadLine();
+// }
+
+
+// //* Sorting Students Names.
+// string temp;
+// for (int pass = 1; pass < students.Length; pass++)
+// {
+//     for (int i = 0; i < students.Length - 1; i++)
+//     {
+//         if (students[i].CompareTo(students[i + 1]) == 1)
+//         {
+//             temp = students[i];
+//             students[i] = students[i + 1];
+//             students[i + 1] = temp;
+//         }
+//     }
+// }
+
+
+// //* Printing Students Names.
+// for (int i = 0; i < students.Length; i++)
+// {
+//     Console.WriteLine(students[i]);
+// }
+
+
+//* -------------------------------------------------------------------------
