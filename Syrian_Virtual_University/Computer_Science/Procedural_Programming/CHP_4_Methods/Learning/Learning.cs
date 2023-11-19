@@ -127,3 +127,56 @@ Console.WriteLine("Min of {0} and {1} is {2}", x, y, min);
 //* --------------------------------------------------------------
 
 
+//* >>>>>>>>> Definition of methods <<<<<<<<< *//
+
+//* The concept of method (function or procedure) in the C# language is derived from the concept of method in mathematics.
+//* The function can be defined mathematically as a relationship that links one or more elements of the source set to one element of the destination set.
+
+//* The method can be defined using the following general formula:
+
+/*
+access_qualifier return_type method_name(parameter_declaration_list)
+{
+    statement_list
+    return return_value;
+}
+*/
+
+//* where:
+//* Access_qualifier: expresses the method of calling the method and the permission to access it.
+//* return_type: is the type of value returned or returned by the method.
+//* method_name: is an identifier that identifies the name of the method.
+//* Parameter_declaration_list: is a list of method parameter declarations separated by commas.
+//* statement_list: A sequence of statements and commands that describe the behavior of a method.
+//* return_value: The value that the method returns.
+//* return is a keyword whose function is to terminate the method and return the resulting value.
+
+
+
+//* A collection of examples of defining methods in different forms:
+
+//* Example 1: Defining a method that has a return value and has one or more parameters:
+/*
+//* returns the maximum of its three integer parameters.
+static int Maximum(int x, int y, int z)
+{
+    int maximumValue = x; //* assume x is the largest to start
+
+    //* determine whether y is greater than maximumValue.
+    if (y > maximumValue)
+    {
+        maximumValue = y;
+    }
+
+    //* determine whether z is greater than maximumValue.
+    if (z > maximumValue)
+    {
+        maximumValue = z;
+    }
+
+    return maximumValue;
+
+} // end method Maximum
+
+Console.WriteLine("The Maximum number is: " + Maximum(10, 5, 2));
+*/
