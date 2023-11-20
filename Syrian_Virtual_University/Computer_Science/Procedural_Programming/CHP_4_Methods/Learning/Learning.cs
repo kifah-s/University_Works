@@ -180,3 +180,28 @@ static int Maximum(int x, int y, int z)
 
 Console.WriteLine("The Maximum number is: " + Maximum(10, 5, 2));
 */
+
+
+//* ...............................
+
+
+//* Example 2: Defining a method that has a return value and no parameters.
+/*
+//* returns the sum of values within range 1 to 50.
+static int SumInterval()
+{
+    int sum = 0;
+    for (int i = 1; i < 50; i++)
+    {
+        sum += i;
+    }
+
+    return sum;
+} //* end method SumInterval.
+
+Console.WriteLine("Sum = " + SumInterval());
+Console.WriteLine($"Sum = {SumInterval()}");
+*/
+
+
+//* ...............................
