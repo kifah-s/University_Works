@@ -253,3 +253,14 @@ WelcomeMsg("kifah");
 //* ...............................
 
 
+//* Example 4: Defining a method that has no return value and does not have a parameter.
+
+//* printing general welcome message.
+static void GeneralWelcomeMsg()
+{
+    Console.WriteLine("Welcome to Methods in C#");
+} //* end method GeneralWelcomeMsg.
+
+
+//* ...............................
+
