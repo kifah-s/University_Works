@@ -254,13 +254,13 @@ WelcomeMsg("kifah");
 
 
 //* Example 4: Defining a method that has no return value and does not have a parameter.
-
+/*
 //* printing general welcome message.
 static void GeneralWelcomeMsg()
 {
     Console.WriteLine("Welcome to Methods in C#");
 } //* end method GeneralWelcomeMsg.
-
+*/
 
 //* --------------------------------------------------------------
 
@@ -331,4 +331,52 @@ Console.WriteLine("aValue after call : " + aValue);
 *   and therefore the changes that occur affect the value of x only and do not The value of aValue is reflected out of the method.
 */
 
+
+/*
+* This type of calling of methods is called call by value and is summarized as follows:
+*   ▪ In this case, a copy of the value of the variable passed as a parameter is passed to the method.
+*   ▪ This variable will not be affected by any modifications made by the method to the parameter in the body of the method.
+*/
+
+/*
+* - It sometimes happens that the nature of the issue requires that changes in the values of the mediators inside the method be reflected
+*   in their values outside the method.
+
+* - The call by reference method is summarized as follows:
+*       ▪ In this case, the variable reference (address) passed as a parameter to the method.
+*       ▪ This variable is affected by any modifications the method makes to the parameter in the body of the method.
+*       ▪ The variable passed must be initialized (have a value).
+
+
+
+* - The reference to a variable means the address of the memory location occupied by this variable,
+*   The reference to a variable is expressed by placing the ref keyword before declaring this variable.
+
+* - In the case of calling by reference, the memory address of the argument is passed to the method parameter,
+*   and thus this is equivalent to giving the argument an alternative name, alias, which is the name of the parameter.
+*/
+
+
+//* Example:
+/*
+static int TestRefCall(ref int x)
+{
+    x++;
+    
+    Console.WriteLine("aValue during call :" + x);
+
+    return x;
+}
+
+int aValue = 10;
+Console.WriteLine("aValue before call :" + aValue);
+int bValue = TestRefCall(ref aValue);
+Console.WriteLine("aValue after call :" + aValue);
+*/
+
+/*
+! Important Notes:
+! - Call by value = Call by a "COPY" from variable value.
+! - Call by reference = Call by variable "index".
+*/
 
