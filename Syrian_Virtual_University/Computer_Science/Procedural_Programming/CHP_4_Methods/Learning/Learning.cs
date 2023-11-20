@@ -262,5 +262,38 @@ static void GeneralWelcomeMsg()
 } //* end method GeneralWelcomeMsg.
 
 
-//* ...............................
+//* --------------------------------------------------------------
 
+
+//* >>>>>>>>>>>>>>>>>>>>> Using functions (calling) <<<<<<<<<<<<<<<<<<<<<<<<<<<<< *//
+
+/*
+* 1. The method code is not executed once we define it, but in order for it to be executed, the method must be used,
+* which is done by calling it in the place where we want to apply its effect and by using the values on which we want to achieve this effect.
+
+* 2. The method can be called anywhere in the program, whether by the main() method or by any other user-defined method.
+*/
+
+
+/*
+* Proper function calling requires focusing on three components:
+*   1. The first component is the method name: The method name is used as an identifier to call (call) this method.
+*   2. The second component is the parameters: where the values of the method’s parameters are passed so that the following is taken into account:
+*       - The number of values passed must be equal to the number of parameters.
+*       - The types of values passed must match the types of method parameters.
+*       - The order of the values passed must match the order of the method parameters.
+*   3. The third component is the return value: we distinguish here between two cases:
+*       - In the case of a method that does not return a value (the type of the return value is void),
+*         in this case it is sufficient to mention the name of the method and pass values to its parameter correctly,
+*         (and it is not permissible to assign it or use it within an arithmetic expression...(etc.)
+*       - If a method returns a value (the type of the return value is not void), in this case the call must be made with
+*         Proportional to the returned value, i.e. within an assignment expression, an arithmetic or logical expression, or an output instruction.
+*/
+
+/*
+* - Values can be passed to parameters directly, Maximum(50, 20, 12) or via Maximum(a, b, c) arguments.
+* - Calls of this type are called call by value. In this case, copies of the values of the passed arguments are created and given to the method parameter.
+*/
+
+
+//* --------------------------------------------------------------
