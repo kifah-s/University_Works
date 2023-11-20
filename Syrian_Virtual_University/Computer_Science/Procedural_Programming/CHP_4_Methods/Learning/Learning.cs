@@ -205,3 +205,28 @@ Console.WriteLine($"Sum = {SumInterval()}");
 
 
 //* ...............................
+
+
+//* Example 3: Defining a method that has no return value and has one or more parameters
+/*
+//* printing welcome message.
+static void WelcomeMsg(string name)
+{
+    Console.WriteLine("Welcome {0} to Methods in C# ", name);
+} //* end method WelcomeMsg.
+
+WelcomeMsg("kifah");
+*/
+
+
+//* printing welcome message.
+/*
+static void WelcomeMsg(string name)
+{
+    Console.WriteLine($"Welcome {name} to Methods in C# ");
+} //* end method WelcomeMsg.
+
+WelcomeMsg("kifah");
+*/
+
+//* ...............................
