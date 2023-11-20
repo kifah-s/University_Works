@@ -181,6 +181,17 @@ static int Maximum(int x, int y, int z)
 Console.WriteLine("The Maximum number is: " + Maximum(10, 5, 2));
 */
 
+//! Notes:
+//* 1 - The method included three parameters,
+//* where the parameters were defined within the method header enclosed in parentheses ( )
+//* and the definition of each parameter included specifying its type and name,
+//* and the parameters were separated by regular commas.
+
+//* 2 - The value returned by the method is of type int.
+
+//* 3 - All method commands after declaring them are enclosed in block brackets {}.
+
+//* 4 - ▪ The return keyword was used to return the result of the method’s execution (here it is the largest value among three given values).
 
 //* ...............................
 
@@ -202,6 +213,10 @@ static int SumInterval()
 Console.WriteLine("Sum = " + SumInterval());
 Console.WriteLine($"Sum = {SumInterval()}");
 */
+
+//! Notes:
+//* 1 - The method definition did not include any parameter, so the parentheses were left empty,
+//* It is never permissible to delete the parentheses when there is no parameter for the method.
 
 
 //* ...............................
@@ -229,4 +244,12 @@ static void WelcomeMsg(string name)
 WelcomeMsg("kifah");
 */
 
+//! Notes:
+//* 1 - This method does not have a return value, so the keyword void is used to indicate this.
+
+//* 2 - deleted the return statement from the method because there is no value resulting from this method to be returned.
+
+
 //* ...............................
+
+
