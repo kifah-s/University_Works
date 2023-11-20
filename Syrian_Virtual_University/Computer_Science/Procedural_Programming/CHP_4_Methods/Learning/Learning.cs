@@ -297,3 +297,38 @@ static void GeneralWelcomeMsg()
 
 
 //* --------------------------------------------------------------
+
+
+//* >>>>>>>>>>>>>>>>>>>>> Call methods by reference (by title) <<<<<<<<<<<<<<<<<<<<<<<<<<<<< *//
+
+/*
+* - The process of passing the values of the arguments to the method parameters is nothing,
+*   but the process of copying the values of these arguments to the method parameters,
+*   and therefore any changes that occur to the values of these arguments within the method are not reflected in their values within the calling method.
+*/
+
+//* Example:
+/*
+static int TestValCall(int x)
+{
+    x++;
+    Console.WriteLine("aValue during call : " + x);
+    return x;
+}
+
+int aValue = 10;
+Console.WriteLine("aValue before call : " + aValue);
+
+int bValue = TestValCall(aValue);
+
+Console.WriteLine("aValue after call : " + aValue);
+*/
+
+/*
+* - We note that the value of the variable aValue remained the same before and after calling the method,
+*   noting that this value was increased by 1 within the method. The reason for this is that when called,
+*   the value of the parameter aValue is copied to the parameter x,
+*   and therefore the changes that occur affect the value of x only and do not The value of aValue is reflected out of the method.
+*/
+
+
