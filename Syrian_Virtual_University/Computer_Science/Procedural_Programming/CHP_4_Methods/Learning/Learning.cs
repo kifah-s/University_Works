@@ -637,3 +637,44 @@ Console.WriteLine("Average of d1, d2, d3 and d4 is {0:F1}", Average(d1, d2, d3, 
 
 
 //* Example 1: Calculating the volume of a rectangular prism.
+
+//* Assuming that we have a group of cement blocks in the form of rectangular parallelepipeds,
+//* most of which are 40 cm high, and that a construction worker uses these blocks to build a wall,
+//* He first calculates the size of the cement block in his hands to determine where on the wall he will place it.
+
+//* We would like to help him calculate the volume of the cement block.
+
+
+//* .............. Functions ..............
+
+//* calculate volume
+static int block_vol(int length, int width, int height = 40)
+{
+    return length * width * height;
+} //* end method block_vol
+
+
+//* .............. End Functions ..............
+
+
+//* length = 10, width=20, height = 40.
+Console.WriteLine(block_vol(10, 20));
+
+//* length = 10, width=20, height = 30 (not 40).
+Console.WriteLine(block_vol(10, 20, 30));
+
+
+//* .............................................
+
+
+
+
+
+
+
+
+
+
+
+
+
