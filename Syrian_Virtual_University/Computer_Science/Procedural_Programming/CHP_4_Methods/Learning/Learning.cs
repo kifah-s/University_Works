@@ -380,3 +380,35 @@ Console.WriteLine("aValue after call :" + aValue);
 ! - Call by reference = Call by variable "index".
 */
 
+/*
+* Many programmers prefer to use the call-by-reference method rather than the return-value method to obtain the result of method execution,
+* (especially when there is a need for the method to calculate more than one result value).
+* For this reason, in the C# language, a special case of calling by reference can be used, which is the case of using the output operator out.
+* This can be summarized as follows:
+*   ▪ In this case, the variable reference (address) passed as a parameter is passed to the method.
+*   ▪ This variable is affected by any modifications the method makes to the parameter in the body of the method.
+*   ▪ The passed variable can be uninitialized (have no value).
+*/
+
+/*
+//* Example:
+
+static void TestOutCall(int length, int width, out int circum, out int area)
+{
+    circum = 2 * (length + width);
+    area = length * width;
+}
+
+int L = 10, W = 15, C, S;
+TestOutCall(L, W, out C, out S);
+Console.WriteLine("C = " + C);
+Console.WriteLine("S = " + S);
+*/
+
+
+
+
+
+
+
+
