@@ -644,7 +644,7 @@ Console.WriteLine("Average of d1, d2, d3 and d4 is {0:F1}", Average(d1, d2, d3, 
 
 //* We would like to help him calculate the volume of the cement block.
 
-
+/*
 //* .............. Functions ..............
 
 //* calculate volume
@@ -662,18 +662,44 @@ Console.WriteLine(block_vol(10, 20));
 
 //* length = 10, width=20, height = 30 (not 40).
 Console.WriteLine(block_vol(10, 20, 30));
+*/
 
+//! Note 1: The order of parameters in the method definition is very important if there are default values for some arguments.
+//! Note 2:Parameters with default values (if they exist) must be included at the end of the method parameters so that if they are deleted during the call,
+//!        the compiler does not have any confusion in the order of the values passed.
 
 //* .............................................
 
 
+//* A method can contain any number of parameters with default values.
+
+//* Example: 
+/*
+//* .............. Functions ..............
+
+//* calculate volume.
+static int block_vol(int length = 60, int width = 50, int height = 40)
+{
+    return length * width * height;
+} //* // end method block_vol
+
+//* .............. End Functions ..............
+
+//* length = 60, width = 50, height = 40.
+Console.WriteLine(block_vol());
+
+//* length = 30 (not 60), width = 50, height = 40.
+Console.WriteLine(block_vol(30));
+
+//* length = 30 (not 60), width = 10 (not 50), height = 40.
+Console.WriteLine(block_vol(30, 10));
+
+//* length = 10 (not 60), width = 20 (not 50), height = 30 (not 40).
+Console.WriteLine(block_vol(10, 20, 30));
+*/
 
 
-
-
-
-
-
+//* .............................................
 
 
 
