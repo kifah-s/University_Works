@@ -709,4 +709,40 @@ Console.WriteLine(block_vol(10, 20, 30));
 
 
 
+//* Example 2: Calculating raising a number to an integer power.
+//* We want to calculate the result of raising a number to a power,
+//* so the most common case is to calculate the square of the number.
+
+/*
+//* .............. Functions ..............
+
+//* use iteration to calculate power
+static int Power(int baseValue, int exponentValue = 2)
+{
+    int result = 1; //* initialize total.
+
+    for (int i = 1; i <= exponentValue; i++)
+    {
+        result *= baseValue;
+    }
+
+    return result;
+}
+
+//* .............. End Functions ..............
+
+//* call Power with and without optional arguments.
+Console.WriteLine("Power(10) = {0}", Power(10));
+Console.WriteLine("Power(2, 10) = {0}", Power(2, 10));
+*/
+
+
+//* .............................................
+
+
+
+
+
+
+
 
