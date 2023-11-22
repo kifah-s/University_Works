@@ -407,6 +407,10 @@ Console.WriteLine("S = " + S);
 
 
 
+
+//* Example:
+//* The following example shows various previous cases
+
 /*
 //* .............. Functions ..............
 
@@ -471,6 +475,108 @@ SquareOut(out z); //* must use keyword out.
 Console.WriteLine("Value of y after SquareRef: {0}", y);
 Console.WriteLine("Value of z after SquareOut: {0}\n", z);
 */
+
+
+//* --------------------------------------------------------------
+
+
+//* >>>>>>>>>>>>>>>>>>>>> The array is a parameter of the method <<<<<<<<<<<<<<<<<<<<<<<<< *//
+
+/*
+//* - Arrays can be used as a parameter for methods,
+//*   and in this case they exhibit distinct behavior both during the method declaration process and during the method call process.
+
+//* - We summarize this method in the following points:
+//*     ▪ When passing an array as an input parameter to a method,
+//*       the passing is by reference, meaning that any modification to the elements of the array,
+//*       within the method will affect the elements of the passed array.
+//*     ▪ When an element of the array is passed as an input parameter to a method,
+//*       this element is treated like any other variable, that is,
+//*       it can be passed by value, by reference, or as an output variable.
+*/
+
+
+//* Example:
+//* - In the following example, we declare the ModifyArray method,
+//*   which has an array input parameter. Within the method, we rotate the elements of the matrix to multiply them by 2.
+//* - Note that when you call the previous method and pass an array to it.
+//*   The passed array elements will be affected after the call (multiply by 2).
+
+//* - In the following example, we declare the ModifyElement method,
+//*   which has an integer input parameter.
+//*   Inside the method, we multiply the passed parameter by 2.
+//* - Note that when you call the previous method and pass an element of the array as its parameter.
+//*   Item will not be affected Array (parameter value).
+
+/*
+//* .............. Functions ..............
+
+//* multiply each element of an array by 2.
+static void ModifyArray(int[] array2)
+{
+    for (int counter = 0; counter < array2.Length; ++counter)
+    {
+        array2[counter] *= 2;
+    }
+} //* end method ModifyArray.
+
+//* multiply argument by 2.
+static void ModifyElement(int element)
+{
+    element *= 2;
+    Console.WriteLine("Value of element in ModifyElement: {0}", element);
+} //* end method ModifyElement.
+
+//* .............. End Functions ..............
+
+
+
+int[] array = { 1, 2, 3, 4, 5 };
+
+Console.WriteLine("Effects of passing reference to entire array:\n" +
+                    "The values of the original array are:");
+
+//* output original array elements.
+foreach (int value in array)
+{
+    Console.Write(" {0}", value);
+}
+
+ModifyArray(array); //* pass array reference.
+
+Console.WriteLine("\n\nThe values of the modified array are:");
+
+//* output modified array elements.
+foreach (int value in array)
+{
+    Console.Write(" {0}", value);
+}
+
+System.Console.WriteLine();
+System.Console.Write("-------------------------------------");
+
+Console.WriteLine("\n\nEffects of passing array element value:\n" +
+                  "array[3] before ModifyElement: {0}", array[3]);
+
+ModifyElement(array[3]); //* attempt to modify array[3].
+
+Console.WriteLine("array[3] after ModifyElement: {0}", array[3]);
+*/
+
+
+//! IMPORTANT NOTES:
+//!     1. The default mode for passing "variables" in functions is: Call py "value".
+//!     2. The default mode for passing "arrays" in functions is: Call py "reference".
+
+
+
+//* --------------------------------------------------------------
+
+
+
+
+
+
 
 
 
