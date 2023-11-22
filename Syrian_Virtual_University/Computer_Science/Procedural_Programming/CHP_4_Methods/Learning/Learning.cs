@@ -573,17 +573,67 @@ Console.WriteLine("array[3] after ModifyElement: {0}", array[3]);
 //* --------------------------------------------------------------
 
 
+//* >>>>>>>> List of parameters of variable length <<<<<<<<< *//
+
+/*
+//* A variable-length parameter list allows declaring methods that can have a variable number of parameters.
+//* A list of variables of variable length is declared using a unary array as the parameter preceded by the keyword "params".
+//*     ▪ In the following example, we declare the Average method using a single matrix as the input parameter with the keyword params.
+//*     ▪ Note that we call this method with a variable number of parameters each time.
+*/
+
+//* Example:
+/*
+//* .............. Functions ..............
+
+//* calculate average.
+static double Average(params double[] numbers)
+{
+    double total = 0.0; //* initialize total
+
+    //* calculate total using the foreach statement.
+    foreach (double d in numbers)
+    {
+        total += d;
+    }
+
+    return total / numbers.Length;
+} //* end method Average
+
+
+//* .............. End Functions ..............
+
+
+double d1 = 10.0;
+double d2 = 20.0;
+double d3 = 30.0;
+double d4 = 40.0;
+
+Console.WriteLine("d1 = {0:F1}\nd2 = {1:F1}\nd3 = {2:F1}\nd4 = {3:F1}\n", d1, d2, d3, d4);
+
+Console.WriteLine("Average of d1 and d2 is {0:F1}", Average(d1, d2));
+Console.WriteLine("Average of d1, d2 and d3 is {0:F1}", Average(d1, d2, d3));
+Console.WriteLine("Average of d1, d2, d3 and d4 is {0:F1}", Average(d1, d2, d3, d4));
+
+*/
 
 
 
+//* .............................................
 
 
+//* >>>>>>>>>>> Use virtual brokers <<<<<<<<<<<<<<<< *//
+
+/*
+//* - Giving default values to brokers during the method declaration process.
+
+//* - In this case, if the calling method passes explicit values for these arguments during the calling process,
+//*   the method uses that explicit value in execution.
+//* - If an explicit value is not passed to these arguments, the method uses the default values passed during the declaration when executing the method.
+
+//* - This makes it much easier for the programmer to call the method, as it allows him not to pass intermediate values for all parameters during the call,
+//*   It can also reduce potential errors by passing unwanted values.
+*/
 
 
-
-
-
-
-
-
-
+//* Example 1: Calculating the volume of a rectangular prism.
