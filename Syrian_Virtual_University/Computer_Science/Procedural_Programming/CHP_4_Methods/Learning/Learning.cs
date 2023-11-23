@@ -736,12 +736,10 @@ Console.WriteLine("Power(10) = {0}", Power(10));
 Console.WriteLine("Power(2, 10) = {0}", Power(2, 10));
 */
 
-
 //* .............................................
 
 
-
-
+//* page "26".
 
 
 

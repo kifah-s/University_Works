@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Syrian_Virtual_University", "Syrian_Virtual_University", "{034716D2-9373-4356-B9AE-10165FABA5F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Computer_Science", "Computer_Science", "{3E5F4EA4-4197-4D94-86E7-A0884818AFB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CHP_0_Template", "CHP_0_Template", "{29F7F41C-43DC-4C53-9A6F-75ADDED7315D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learning", "Syrian_Virtual_University\Computer_Science\CHP_0_Template\Learning\Learning.csproj", "{22624677-7661-48EC-B86E-B8FA73862592}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Procedural_Programming", "Procedural_Programming", "{F2E43643-A2D5-4B81-B4AE-32975CE0D920}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CHP_1_Compound_Data_Types_(Arrays)", "CHP_1_Compound_Data_Types_(Arrays)", "{7F946E49-47FC-42C2-8D48-3B7A6B90764B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learning", "Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_1_Compound_Data_Types_(Arrays)\Learning\Learning.csproj", "{76140775-D11C-4EFA-A0CA-4C4FA3708120}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CHP_2_Compound_Data_Types_(Strings)", "CHP_2_Compound_Data_Types_(Strings)", "{0139EE61-E95D-4A61-9C3D-C93D25CA6670}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learning", "Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_2_Compound_Data_Types_(Strings)\Learning\Learning.csproj", "{A102CE99-A5F9-4F38-8FA0-FD09E641E343}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CHP_3_Practice_On_Compound_Data_Types", "CHP_3_Practice_On_Compound_Data_Types", "{3DFE4524-ECE2-48DA-826D-16BD5DA7AA6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learning", "Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_3_Practice_On_Compound_Data_Types\Learning\Learning.csproj", "{A7A8CF9E-5118-43B1-8E94-EC4B873391A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CHP_4_Methods", "CHP_4_Methods", "{3204C036-B769-4172-8111-F9231CF9D23A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learning", "Syrian_Virtual_University\Computer_Science\Procedural_Programming\CHP_4_Methods\Learning\Learning.csproj", "{C90DDD7D-C095-44FE-B5D9-66C240B52E5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22624677-7661-48EC-B86E-B8FA73862592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22624677-7661-48EC-B86E-B8FA73862592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22624677-7661-48EC-B86E-B8FA73862592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22624677-7661-48EC-B86E-B8FA73862592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76140775-D11C-4EFA-A0CA-4C4FA3708120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76140775-D11C-4EFA-A0CA-4C4FA3708120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76140775-D11C-4EFA-A0CA-4C4FA3708120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76140775-D11C-4EFA-A0CA-4C4FA3708120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A102CE99-A5F9-4F38-8FA0-FD09E641E343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A102CE99-A5F9-4F38-8FA0-FD09E641E343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A102CE99-A5F9-4F38-8FA0-FD09E641E343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A102CE99-A5F9-4F38-8FA0-FD09E641E343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7A8CF9E-5118-43B1-8E94-EC4B873391A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7A8CF9E-5118-43B1-8E94-EC4B873391A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7A8CF9E-5118-43B1-8E94-EC4B873391A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7A8CF9E-5118-43B1-8E94-EC4B873391A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C90DDD7D-C095-44FE-B5D9-66C240B52E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C90DDD7D-C095-44FE-B5D9-66C240B52E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C90DDD7D-C095-44FE-B5D9-66C240B52E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C90DDD7D-C095-44FE-B5D9-66C240B52E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E5F4EA4-4197-4D94-86E7-A0884818AFB9} = {034716D2-9373-4356-B9AE-10165FABA5F5}
+		{29F7F41C-43DC-4C53-9A6F-75ADDED7315D} = {3E5F4EA4-4197-4D94-86E7-A0884818AFB9}
+		{22624677-7661-48EC-B86E-B8FA73862592} = {29F7F41C-43DC-4C53-9A6F-75ADDED7315D}
+		{F2E43643-A2D5-4B81-B4AE-32975CE0D920} = {3E5F4EA4-4197-4D94-86E7-A0884818AFB9}
+		{7F946E49-47FC-42C2-8D48-3B7A6B90764B} = {F2E43643-A2D5-4B81-B4AE-32975CE0D920}
+		{76140775-D11C-4EFA-A0CA-4C4FA3708120} = {7F946E49-47FC-42C2-8D48-3B7A6B90764B}
+		{0139EE61-E95D-4A61-9C3D-C93D25CA6670} = {F2E43643-A2D5-4B81-B4AE-32975CE0D920}
+		{A102CE99-A5F9-4F38-8FA0-FD09E641E343} = {0139EE61-E95D-4A61-9C3D-C93D25CA6670}
+		{3DFE4524-ECE2-48DA-826D-16BD5DA7AA6B} = {F2E43643-A2D5-4B81-B4AE-32975CE0D920}
+		{A7A8CF9E-5118-43B1-8E94-EC4B873391A7} = {3DFE4524-ECE2-48DA-826D-16BD5DA7AA6B}
+		{3204C036-B769-4172-8111-F9231CF9D23A} = {F2E43643-A2D5-4B81-B4AE-32975CE0D920}
+		{C90DDD7D-C095-44FE-B5D9-66C240B52E5C} = {3204C036-B769-4172-8111-F9231CF9D23A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0BC79F7-5642-4834-A2B3-91ADE1DDA6CB}
+	EndGlobalSection
+EndGlobal
