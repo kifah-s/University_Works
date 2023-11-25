@@ -176,19 +176,57 @@ void BucketSort(int[] arr)
     }
 } // End Bucket Sort function.
 
+// 5 - Quick Sort function.
+// Function to get the pivot position.
+static int Partition(int[] array, int low, int high)
+{
+    int pivot = array[high];
+    int i = low - 1;
+
+    for (int j = low; j < high; j++)
+    {
+        if (array[j] <= pivot)
+        {
+            i++;
+            Swap(array, i, j);
+        }
+    }
+
+    Swap(array, i + 1, high);
+    return i + 1;
+}
+
+// Function to swap two values in the array.
+static void Swap(int[] array, int i, int j)
+{
+    int temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+}
+// Quick Sort function
+static void QuickSort(int[] array, int low, int high)
+{
+    if (low < high)
+    {
+        // Get the pivot position and sort elements around it.
+        int pivotIndex = Partition(array, low, high);
+
+        // Recursively sort the sub arrays.
+        QuickSort(array, low, pivotIndex - 1);
+        QuickSort(array, pivotIndex + 1, high);
+    }
+}
+// End Quick Sort function.
 
 //! ........... End Algorithms Functions ...........
 
 //* >>>>>>>>>> End Functions <<<<<<<<<< *//
 
-
 Console.WriteLine("\nHello, \"Doctor Hwaida\"\n");
 Console.WriteLine("I'm kifah (ID: kifah_134765), and this is my HW:\n");
 Console.WriteLine("........ The first problem: sorting and arranging arrays ........\n");
 
-
 Console.WriteLine("\n-------------------------------------------\n");
-
 
 Console.WriteLine("1 - Bubble Sort Algorithm ..\n");
 
@@ -206,9 +244,7 @@ BubbleSort(randomArray1);
 Console.WriteLine("\nSorted Array By Bubble Sort Algorithm:");
 PrintArray(randomArray1);
 
-
 Console.WriteLine("\n-------------------------------------------\n");
-
 
 Console.WriteLine("2 - Merge Sort Algorithm ..\n");
 
@@ -226,9 +262,7 @@ MergeSort(randomArray2);
 Console.WriteLine("\nSorted Array By Merge Sort Algorithm:");
 PrintArray(randomArray2);
 
-
 Console.WriteLine("\n-------------------------------------------\n");
-
 
 Console.WriteLine("3 - Insertion Sort Algorithm ..\n");
 
@@ -246,9 +280,7 @@ InsertionSort(randomArray3);
 Console.WriteLine("\nSorted Array By Insertion Sort Algorithm:");
 PrintArray(randomArray3);
 
-
 Console.WriteLine("\n-------------------------------------------\n");
-
 
 Console.WriteLine("4 - Bucket Sort Algorithm ..\n");
 
@@ -266,5 +298,23 @@ BucketSort(randomArray4);
 Console.WriteLine("\nSorted Array By Bucket Sort Algorithm:");
 PrintArray(randomArray4);
 
+Console.WriteLine("\n-------------------------------------------\n");
+
+Console.WriteLine("5 - Quick Sort Algorithm ..\n");
+
+// Create random array.
+int[] randomArray5 = CreateRandomArray();
+
+// Print original array - (Print array before sorted by Quick sort algorithm).
+Console.WriteLine("Original Array:");
+PrintArray(randomArray5);
+
+// Call the Quick Sort function
+BucketSort(randomArray5);
+
+// Print array after sorted by Quick sort algorithm
+Console.WriteLine("\nSorted Array By Quick Sort Algorithm:");
+PrintArray(randomArray5);
 
 Console.WriteLine("\n-------------------------------------------\n");
+
