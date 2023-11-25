@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("\nHello Doctor Hwaida\n");
+Console.WriteLine("\nHello, \"Doctor Hwaida\"\n");
 Console.WriteLine("I'm kifah (ID: kifah_134765), and this is my HW:\n");
 Console.WriteLine("........ The first problem: sorting and arranging arrays ........\n");
 
@@ -64,27 +64,6 @@ static void BubbleSort(int[] arr)
 // End Bubble Sort function.
 
 // 2 - Merge Sort function.
-static void MergeSort(int[] array)
-{
-    if (array.Length <= 1)
-        return;
-
-    int middle = array.Length / 2;
-    int[] left = new int[middle];
-    int[] right = new int[array.Length - middle];
-
-    // Copy data to temporary arrays left[] and right[]
-    Array.Copy(array, 0, left, 0, middle);
-    Array.Copy(array, middle, right, 0, array.Length - middle);
-
-    // Recursively sort the sub-arrays
-    MergeSort(left);
-    MergeSort(right);
-
-    // Merge the sorted halves
-    Merge(array, left, right);
-}
-
 static void Merge(int[] array, int[] left, int[] right)
 {
     int leftIndex = 0, rightIndex = 0, mergedIndex = 0;
@@ -121,7 +100,55 @@ static void Merge(int[] array, int[] left, int[] right)
         mergedIndex++;
     }
 }
+
+static void MergeSort(int[] array)
+{
+    if (array.Length <= 1)
+        return;
+
+    int middle = array.Length / 2;
+    int[] left = new int[middle];
+    int[] right = new int[array.Length - middle];
+
+    // Copy data to temporary arrays left[] and right[]
+    Array.Copy(array, 0, left, 0, middle);
+    Array.Copy(array, middle, right, 0, array.Length - middle);
+
+    // Recursively sort the sub-arrays
+    MergeSort(left);
+    MergeSort(right);
+
+    // Merge the sorted halves
+    Merge(array, left, right);
+}
 // End Merge Sort function.
+
+// 3 - Insertion Sort function.
+void InsertionSort(int[] array)
+{
+    int n = array.Length;
+    for (int i = 1; i < n; ++i)
+    {
+        int key = array[i];
+        int j = i - 1;
+
+
+        while (j >= 0 && array[j] > key)
+        {
+            array[j + 1] = array[j];
+            j = j - 1;
+        }
+
+        array[j + 1] = key;
+    }
+}
+
+
+
+
+
+
+
 
 //! ........... End Algorithms Functions ...........
 
@@ -167,4 +194,25 @@ PrintArray(randomArray2);
 
 
 Console.WriteLine("\n-------------------------------------------\n");
+
+
+Console.WriteLine("3 - Insertion Sort Algorithm ..\n");
+
+// Create random array.
+int[] randomArray3 = CreateRandomArray();
+
+// Print original array - (Print array before sorted by Insertion sort algorithm).
+Console.WriteLine("Original Array:");
+PrintArray(randomArray3);
+
+// Call the Insertion Sort function
+InsertionSort(randomArray3);
+
+// Print array after sorted by Insertion sort algorithm
+Console.WriteLine("\nSorted Array By Insertion Sort Algorithm:");
+PrintArray(randomArray3);
+
+
+Console.WriteLine("\n-------------------------------------------\n");
+
 
