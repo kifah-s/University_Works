@@ -1,7 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("\nHello, \"Doctor Hwaida\"\n");
-Console.WriteLine("I'm kifah (ID: kifah_134765), and this is my HW:\n");
-Console.WriteLine("........ The first problem: sorting and arranging arrays ........\n");
+
 
 
 //* >>>>>>>>>> Functions <<<<<<<<<< *//
@@ -27,7 +25,6 @@ static int[] CreateRandomArray()
     return randomArray;
 }
 
-
 // Function to print an array.
 static void PrintArray(int[] arr)
 {
@@ -37,7 +34,6 @@ static void PrintArray(int[] arr)
     }
     Console.WriteLine();
 }
-
 
 //! ........... Algorithms Functions ...........
 
@@ -142,18 +138,56 @@ void InsertionSort(int[] array)
         array[j + 1] = key;
     }
 }
+// EndInsertion Sort function.
 
+// 4 - Bucket Sort function.
+void BucketSort(int[] arr)
+{
+    int n = arr.Length;
+    List<int>[] buckets = new List<int>[n];
 
+    // Create buckets
+    for (int i = 0; i < n; i++)
+    {
+        buckets[i] = new List<int>();
+    }
 
+    // Place elements into appropriate buckets
+    for (int i = 0; i < n; i++)
+    {
+        int bucketIndex = arr[i] / 10; // Adjust as needed based on the range of your integers
+        buckets[bucketIndex].Add(arr[i]);
+    }
 
+    // Sort each bucket using a simple sorting algorithm (another sorting algorithm can be used)
+    for (int i = 0; i < n; i++)
+    {
+        buckets[i].Sort();
+    }
 
-
+    // Collect the sorted elements from the buckets
+    int index = 0;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < buckets[i].Count; j++)
+        {
+            arr[index++] = buckets[i][j];
+        }
+    }
+} // End Bucket Sort function.
 
 
 //! ........... End Algorithms Functions ...........
 
 //* >>>>>>>>>> End Functions <<<<<<<<<< *//
 
+
+Console.WriteLine("\nHello, \"Doctor Hwaida\"\n");
+Console.WriteLine("I'm kifah (ID: kifah_134765), and this is my HW:\n");
+Console.WriteLine("........ The first problem: sorting and arranging arrays ........\n");
+
+
+Console.WriteLine("\n-------------------------------------------\n");
 
 
 Console.WriteLine("1 - Bubble Sort Algorithm ..\n");
@@ -216,3 +250,21 @@ PrintArray(randomArray3);
 Console.WriteLine("\n-------------------------------------------\n");
 
 
+Console.WriteLine("4 - Bucket Sort Algorithm ..\n");
+
+// Create random array.
+int[] randomArray4 = CreateRandomArray();
+
+// Print original array - (Print array before sorted by Bucket sort algorithm).
+Console.WriteLine("Original Array:");
+PrintArray(randomArray4);
+
+// Call the Bucket Sort function
+BucketSort(randomArray4);
+
+// Print array after sorted by Bucket sort algorithm
+Console.WriteLine("\nSorted Array By Bucket Sort Algorithm:");
+PrintArray(randomArray4);
+
+
+Console.WriteLine("\n-------------------------------------------\n");
