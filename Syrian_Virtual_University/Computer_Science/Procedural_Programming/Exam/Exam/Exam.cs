@@ -232,7 +232,7 @@ static void BucketSort(int[] arr)
             arr[index++] = buckets[i][j];
         }
     }
-}
+} // End Bucket Sort function.
 // End Bucket Sort function.
 
 Console.WriteLine("4 - Bucket Sort Algorithm ..\n");
@@ -272,7 +272,6 @@ static int Partition(int[] array, int low, int high)
     Swap(array, i + 1, high);
     return i + 1;
 }
-
 // Function to swap two values in the array.
 static void Swap(int[] array, int i, int j)
 {
@@ -280,7 +279,6 @@ static void Swap(int[] array, int i, int j)
     array[i] = array[j];
     array[j] = temp;
 }
-
 // Quick Sort function
 static void QuickSort(int[] array, int low, int high)
 {
@@ -318,99 +316,135 @@ Console.WriteLine("\n-------------------------------------------\n");
 
 
 //! ........... The Second Problem : encryption and decryption of texts ...........
+
 Console.WriteLine("........ The second problem: encryption and decryption of texts ........\n");
 
-Console.WriteLine("1 - Encryption process:\n");
-
-/*
-// 1 - Encryption process:
-
-// دالة لقراءة النص من ملف
+// Function to read text from a file.
 static string ReadFromFile(string filePath)
 {
     try
     {
-        // قراءة النص من الملف
+        // Read text from file.
         return File.ReadAllText(filePath);
     }
     catch (IOException e)
     {
-        Console.WriteLine($"حدث خطأ أثناء قراءة الملف: {e.Message}");
+        Console.WriteLine($"An error occurred while reading the file: {e.Message}");
         return string.Empty;
     }
 }
 
-// دالة لكتابة النص إلى ملف
+// Function to write text to a file.
 static void WriteToFile(string filePath, string text)
 {
     try
     {
-        // كتابة النص إلى الملف
+        // Write text to the file.
         File.WriteAllText(filePath, text);
-        Console.WriteLine("تمت كتابة النص المشفر إلى الملف بنجاح.");
     }
     catch (IOException e)
     {
-        Console.WriteLine($"حدث خطأ أثناء كتابة الملف: {e.Message}");
+        Console.WriteLine($"An error occurred while writing the file: {e.Message}");
     }
 }
 
-// دالة لتشفير النص بواسطة تشفير قيصر
+// Function to convert a single character using Caesar cipher.
+static char CaesarCipherShiftCharacter(char character, int shift)
+{
+    // Conversion based on animation and preserving character case.
+    char baseChar = char.IsUpper(character) ? 'A' : 'a';
+    return (char)(((character - baseChar + shift + 26) % 26) + baseChar);
+}
+
+// .......... 1 - Encryption process: ..........
+Console.WriteLine("1 - Encryption: ");
+
+// Function to encrypt text using Caesar cipher.
 static string CaesarCipherEncrypt(string input, int shift)
 {
     char[] result = input.ToCharArray();
 
     for (int i = 0; i < result.Length; i++)
     {
-        // تحقق من أن الحرف هو حرف أبجدي
+        // Verify that the character is an alphabetical character.
         if (char.IsLetter(result[i]))
         {
-            // تحويل الحرف بمقدار التحريك
+            // Transform the letter by moving it.
             result[i] = CaesarCipherShiftCharacter(result[i], shift);
         }
     }
 
     return new string(result);
 }
+// End encrypt function.
 
-// دالة لتحويل حرف واحد بواسطة تشفير قيصر
-static char CaesarCipherShiftCharacter(char character, int shift)
-{
-    // التحويل بحسب التحريك والحفاظ على حالة الحرف
-    char baseChar = char.IsUpper(character) ? 'A' : 'a';
-    return (char)(((character - baseChar + shift + 26) % 26) + baseChar);
-}
-
-*/
-
-
-
-/*
-
-
-
-// اسم الملف الذي يحتوي على النص الأصلي (يفترض أن يكون في نفس الدليل)
+// Name of the file containing the original text (assumed to be in the same directory).
 string inputFilePath = @"D:\input_txt.txt";
 
-// اسم الملف الذي سيتم كتابة النص المشفر إليه (يفترض أن يكون في نفس الدليل)
+// Name of the file to which the cipher text will be written (presumably in the same directory).
 string outputFilePath = @"D:\output_txt.txt";
 
-// مقدار التحريك (يمكن تغييره إلى أي قيمة أخرى)
+// Move amount (can be changed to any other value).
 int shiftAmount = 3;
 
-// قراءة النص من الملف
+// Read text from file.
 string originalText = ReadFromFile(inputFilePath);
 
-// تشفير النص
+// Text encryption.
 string encryptedText = CaesarCipherEncrypt(originalText, shiftAmount);
 
-// كتابة النص المشفر إلى ملف آخر
+// Write the encrypted text to another file.
 WriteToFile(outputFilePath, encryptedText);
 
-// عرض النتائج
-Console.WriteLine("Original Text: " + originalText);
-Console.WriteLine("Encrypted Text: " + encryptedText);
+// Show results.
+Console.WriteLine("Original Text in input_txt.txt: " + originalText);
+Console.WriteLine("Encrypted Text in output_txt.txt: " + encryptedText);
 
-*/
+Console.WriteLine("\n.......................\n");
+
+// .......... 2 - ...... Decryption process: ..........
+Console.WriteLine("2 - Decryption: ");
+
+// Function to decrypt text using Caesar cipher.
+static string CaesarCipherDecrypt(string input, int shift)
+{
+    char[] result = input.ToCharArray();
+
+    for (int i = 0; i < result.Length; i++)
+    {
+        // Verify that the character is an alphabetical character.
+        if (char.IsLetter(result[i]))
+        {
+            // Transform the letter by moving it (in the opposite direction).
+            result[i] = CaesarCipherShiftCharacter(result[i], -shift);
+        }
+    }
+
+    return new string(result);
+}
+// End decrypt function.
+
+// Name of the file containing the cipher text (assumed to be in the same directory).
+string encryptedFilePath = @"D:\output_txt.txt";
+
+// Name of the file to which the unencrypted text will be written (assumed to be in the same directory).
+string decryptedFilePath = @"D:\input_txt.txt";
+
+// Read encrypted text from the file.
+string encryptedText2 = ReadFromFile(encryptedFilePath);
+
+// Decrypt text.
+string decryptedText = CaesarCipherDecrypt(encryptedText2, shiftAmount);
+
+// Writing the unencrypted text to another file.
+WriteToFile(decryptedFilePath, decryptedText);
+
+// Show results.
+Console.WriteLine("Encrypted Text in output_txt.txt: " + encryptedText2);
+Console.WriteLine("Decrypted Text in input_txt.txt: : " + decryptedText);
+
+Console.WriteLine("\n");
+Console.WriteLine("Thank you very much doctor..\nRegardless of the grade that will be awarded to me, please provide me via email with any comments or advice from you to strengthen and improve my skills in writing code.\nThanks, kifah (ID: kifah_134765)..");
+Console.WriteLine("\n");
 
 //! ........... End The Second Problem : encryption and decryption of texts ...........
