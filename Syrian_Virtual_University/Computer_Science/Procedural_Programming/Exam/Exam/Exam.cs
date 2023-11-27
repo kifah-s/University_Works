@@ -318,7 +318,7 @@ Console.WriteLine("\n-------------------------------------------\n");
 //! ........... The Second Problem : encryption and decryption of texts ...........
 
 Console.WriteLine("........ The second problem: encryption and decryption of texts ........\n");
-
+// >>>>>>>>>>>>>>> Function <<<<<<<<<<<<<<<
 // Function to read text from a file.
 static string ReadFromFile(string filePath)
 {
@@ -355,6 +355,15 @@ static char CaesarCipherShiftCharacter(char character, int shift)
     char baseChar = char.IsUpper(character) ? 'A' : 'a';
     return (char)(((character - baseChar + shift + 26) % 26) + baseChar);
 }
+// >>>>>>>>>>>>>>> End Function <<<<<<<<<<<<<<<
+
+// First write (ABCDEFGHIJKLMNOPQRSTUVWXYZ) in input_txt file.
+// The text that will be written to the file.
+string textToWrite = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+// The name of the file to which the text will be written (assumed to be in the same directory).
+string filePath = @"D:\input_txt.txt";
+WriteToFile(filePath, textToWrite);
 
 // .......... 1 - Encryption process: ..........
 Console.WriteLine("1 - Encryption: ");
