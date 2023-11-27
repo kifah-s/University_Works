@@ -1,8 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
+Console.WriteLine("\nHello, \"Doctor Hwaida\"\n");
+Console.WriteLine("I'm kifah (ID: kifah_134765), and this is my HW:\n");
 
-//* >>>>>>>>>> Functions <<<<<<<<<< *//
+Console.WriteLine("-------------------------------------------\n");
 
 // Function to create random array.
 static int[] CreateRandomArray()
@@ -35,7 +37,9 @@ static void PrintArray(int[] arr)
     Console.WriteLine();
 }
 
-//! ........... Algorithms Functions ...........
+//! ........... The First Problem : Algorithms Functions ...........
+
+Console.WriteLine("........ The first problem: sorting and arranging arrays ........\n");
 
 // 1 - Bubble Sort function.
 static void BubbleSort(int[] arr)
@@ -58,6 +62,24 @@ static void BubbleSort(int[] arr)
     }
 }
 // End Bubble Sort function.
+
+Console.WriteLine("1 - Bubble Sort Algorithm ..\n");
+
+// Create random array.
+int[] randomArray1 = CreateRandomArray();
+
+// Print original array - (Print array before sorted by bubble sort algorithm).
+Console.WriteLine("Original Array:");
+PrintArray(randomArray1);
+
+// Call the Bubble Sort function
+BubbleSort(randomArray1);
+
+// Print array after sorted by bubble sort algorithm
+Console.WriteLine("\nSorted Array By Bubble Sort Algorithm:");
+PrintArray(randomArray1);
+
+Console.WriteLine("\n-------------------------------------------\n");
 
 // 2 - Merge Sort function.
 static void Merge(int[] array, int[] left, int[] right)
@@ -119,8 +141,26 @@ static void MergeSort(int[] array)
 }
 // End Merge Sort function.
 
+Console.WriteLine("2 - Merge Sort Algorithm ..\n");
+
+// Create random array.
+int[] randomArray2 = CreateRandomArray();
+
+// Print original array - (Print array before sorted by merge sort algorithm).
+Console.WriteLine("Original Array:");
+PrintArray(randomArray2);
+
+// Call the merge Sort function
+MergeSort(randomArray2);
+
+// Print array after sorted by merge sort algorithm
+Console.WriteLine("\nSorted Array By Merge Sort Algorithm:");
+PrintArray(randomArray2);
+
+Console.WriteLine("\n-------------------------------------------\n");
+
 // 3 - Insertion Sort function.
-void InsertionSort(int[] array)
+static void InsertionSort(int[] array)
 {
     int n = array.Length;
     for (int i = 1; i < n; ++i)
@@ -138,10 +178,28 @@ void InsertionSort(int[] array)
         array[j + 1] = key;
     }
 }
-// EndInsertion Sort function.
+// End Insertion Sort function.
+
+Console.WriteLine("3 - Insertion Sort Algorithm ..\n");
+
+// Create random array.
+int[] randomArray3 = CreateRandomArray();
+
+// Print original array - (Print array before sorted by Insertion sort algorithm).
+Console.WriteLine("Original Array:");
+PrintArray(randomArray3);
+
+// Call the Insertion Sort function
+InsertionSort(randomArray3);
+
+// Print array after sorted by Insertion sort algorithm
+Console.WriteLine("\nSorted Array By Insertion Sort Algorithm:");
+PrintArray(randomArray3);
+
+Console.WriteLine("\n-------------------------------------------\n");
 
 // 4 - Bucket Sort function.
-void BucketSort(int[] arr)
+static void BucketSort(int[] arr)
 {
     int n = arr.Length;
     List<int>[] buckets = new List<int>[n];
@@ -174,7 +232,26 @@ void BucketSort(int[] arr)
             arr[index++] = buckets[i][j];
         }
     }
-} // End Bucket Sort function.
+}
+// End Bucket Sort function.
+
+Console.WriteLine("4 - Bucket Sort Algorithm ..\n");
+
+// Create random array.
+int[] randomArray4 = CreateRandomArray();
+
+// Print original array - (Print array before sorted by Bucket sort algorithm).
+Console.WriteLine("Original Array:");
+PrintArray(randomArray4);
+
+// Call the Bucket Sort function
+BucketSort(randomArray4);
+
+// Print array after sorted by Bucket sort algorithm
+Console.WriteLine("\nSorted Array By Bucket Sort Algorithm:");
+PrintArray(randomArray4);
+
+Console.WriteLine("\n-------------------------------------------\n");
 
 // 5 - Quick Sort function.
 // Function to get the pivot position.
@@ -203,6 +280,7 @@ static void Swap(int[] array, int i, int j)
     array[i] = array[j];
     array[j] = temp;
 }
+
 // Quick Sort function
 static void QuickSort(int[] array, int low, int high)
 {
@@ -217,88 +295,6 @@ static void QuickSort(int[] array, int low, int high)
     }
 }
 // End Quick Sort function.
-
-//! ........... End Algorithms Functions ...........
-
-//* >>>>>>>>>> End Functions <<<<<<<<<< *//
-
-Console.WriteLine("\nHello, \"Doctor Hwaida\"\n");
-Console.WriteLine("I'm kifah (ID: kifah_134765), and this is my HW:\n");
-Console.WriteLine("........ The first problem: sorting and arranging arrays ........\n");
-
-Console.WriteLine("\n-------------------------------------------\n");
-
-Console.WriteLine("1 - Bubble Sort Algorithm ..\n");
-
-// Create random array.
-int[] randomArray1 = CreateRandomArray();
-
-// Print original array - (Print array before sorted by bubble sort algorithm).
-Console.WriteLine("Original Array:");
-PrintArray(randomArray1);
-
-// Call the Bubble Sort function
-BubbleSort(randomArray1);
-
-// Print array after sorted by bubble sort algorithm
-Console.WriteLine("\nSorted Array By Bubble Sort Algorithm:");
-PrintArray(randomArray1);
-
-Console.WriteLine("\n-------------------------------------------\n");
-
-Console.WriteLine("2 - Merge Sort Algorithm ..\n");
-
-// Create random array.
-int[] randomArray2 = CreateRandomArray();
-
-// Print original array - (Print array before sorted by merge sort algorithm).
-Console.WriteLine("Original Array:");
-PrintArray(randomArray2);
-
-// Call the merge Sort function
-MergeSort(randomArray2);
-
-// Print array after sorted by merge sort algorithm
-Console.WriteLine("\nSorted Array By Merge Sort Algorithm:");
-PrintArray(randomArray2);
-
-Console.WriteLine("\n-------------------------------------------\n");
-
-Console.WriteLine("3 - Insertion Sort Algorithm ..\n");
-
-// Create random array.
-int[] randomArray3 = CreateRandomArray();
-
-// Print original array - (Print array before sorted by Insertion sort algorithm).
-Console.WriteLine("Original Array:");
-PrintArray(randomArray3);
-
-// Call the Insertion Sort function
-InsertionSort(randomArray3);
-
-// Print array after sorted by Insertion sort algorithm
-Console.WriteLine("\nSorted Array By Insertion Sort Algorithm:");
-PrintArray(randomArray3);
-
-Console.WriteLine("\n-------------------------------------------\n");
-
-Console.WriteLine("4 - Bucket Sort Algorithm ..\n");
-
-// Create random array.
-int[] randomArray4 = CreateRandomArray();
-
-// Print original array - (Print array before sorted by Bucket sort algorithm).
-Console.WriteLine("Original Array:");
-PrintArray(randomArray4);
-
-// Call the Bucket Sort function
-BucketSort(randomArray4);
-
-// Print array after sorted by Bucket sort algorithm
-Console.WriteLine("\nSorted Array By Bucket Sort Algorithm:");
-PrintArray(randomArray4);
-
-Console.WriteLine("\n-------------------------------------------\n");
 
 Console.WriteLine("5 - Quick Sort Algorithm ..\n");
 
@@ -318,3 +314,103 @@ PrintArray(randomArray5);
 
 Console.WriteLine("\n-------------------------------------------\n");
 
+//! ........... End The First Problem : End Algorithms Functions ...........
+
+
+//! ........... The Second Problem : encryption and decryption of texts ...........
+Console.WriteLine("........ The second problem: encryption and decryption of texts ........\n");
+
+Console.WriteLine("1 - Encryption process:\n");
+
+/*
+// 1 - Encryption process:
+
+// دالة لقراءة النص من ملف
+static string ReadFromFile(string filePath)
+{
+    try
+    {
+        // قراءة النص من الملف
+        return File.ReadAllText(filePath);
+    }
+    catch (IOException e)
+    {
+        Console.WriteLine($"حدث خطأ أثناء قراءة الملف: {e.Message}");
+        return string.Empty;
+    }
+}
+
+// دالة لكتابة النص إلى ملف
+static void WriteToFile(string filePath, string text)
+{
+    try
+    {
+        // كتابة النص إلى الملف
+        File.WriteAllText(filePath, text);
+        Console.WriteLine("تمت كتابة النص المشفر إلى الملف بنجاح.");
+    }
+    catch (IOException e)
+    {
+        Console.WriteLine($"حدث خطأ أثناء كتابة الملف: {e.Message}");
+    }
+}
+
+// دالة لتشفير النص بواسطة تشفير قيصر
+static string CaesarCipherEncrypt(string input, int shift)
+{
+    char[] result = input.ToCharArray();
+
+    for (int i = 0; i < result.Length; i++)
+    {
+        // تحقق من أن الحرف هو حرف أبجدي
+        if (char.IsLetter(result[i]))
+        {
+            // تحويل الحرف بمقدار التحريك
+            result[i] = CaesarCipherShiftCharacter(result[i], shift);
+        }
+    }
+
+    return new string(result);
+}
+
+// دالة لتحويل حرف واحد بواسطة تشفير قيصر
+static char CaesarCipherShiftCharacter(char character, int shift)
+{
+    // التحويل بحسب التحريك والحفاظ على حالة الحرف
+    char baseChar = char.IsUpper(character) ? 'A' : 'a';
+    return (char)(((character - baseChar + shift + 26) % 26) + baseChar);
+}
+
+*/
+
+
+
+/*
+
+
+
+// اسم الملف الذي يحتوي على النص الأصلي (يفترض أن يكون في نفس الدليل)
+string inputFilePath = @"D:\input_txt.txt";
+
+// اسم الملف الذي سيتم كتابة النص المشفر إليه (يفترض أن يكون في نفس الدليل)
+string outputFilePath = @"D:\output_txt.txt";
+
+// مقدار التحريك (يمكن تغييره إلى أي قيمة أخرى)
+int shiftAmount = 3;
+
+// قراءة النص من الملف
+string originalText = ReadFromFile(inputFilePath);
+
+// تشفير النص
+string encryptedText = CaesarCipherEncrypt(originalText, shiftAmount);
+
+// كتابة النص المشفر إلى ملف آخر
+WriteToFile(outputFilePath, encryptedText);
+
+// عرض النتائج
+Console.WriteLine("Original Text: " + originalText);
+Console.WriteLine("Encrypted Text: " + encryptedText);
+
+*/
+
+//! ........... End The Second Problem : encryption and decryption of texts ...........
