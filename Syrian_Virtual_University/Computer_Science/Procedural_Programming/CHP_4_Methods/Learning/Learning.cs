@@ -738,9 +738,47 @@ Console.WriteLine("Power(2, 10) = {0}", Power(2, 10));
 
 //* .............................................
 
+//* -------------------------------------------------------------------
 
-//* page "26".
+//* .......... Field of view (Scope) ......... *//
+
+/*
+* Each variable has a scope, that is, the set of instructions that can manipulate this variable.
+
+* The following rules explain the basics of the scope of declaration:
+*   - The scope of method "parameters" is only the "body" of the method itself.
+*   - The scope of a local variable is declared within the method, the block of instructions.
+*   - The scope of variables declared within the initialization section "of" the for statement,
+*     is the body of the "for" statement and any expressions used in its header.
+*   - The scope of a method declared within a class, is the entire body of that class.
+*   - The static method can only handle static class fields.
+*   - Each block can declare its variables.
+*   - The variable declared in the closest block is returned.
+*/
 
 
+//* Example ..
+/*
+//* .......... Function ..........
 
+//* create and initialize local variable x during each call.
+static void UseLocalVariable()
+{
+    int x = 25; //* initialized each time UseLocalVariable is called.
+    Console.WriteLine("local x on entering method UseLocalVariable is {0}", x);
 
+    x++; //* modifies this method's local variable x.
+    Console.WriteLine("local x before exiting method UseLocalVariable is {0}", x);
+}
+//* end method UseLocalVariable.
+
+//* .......... End Function ..........
+
+int x = 5; //* method's local variable x hides static variable x.
+Console.WriteLine("local x in method ( Main ) is {0}", x);
+
+//* UseLocalVariable has its own local x.
+UseLocalVariable();
+
+Console.WriteLine("local x in method ( Main ) is {0}", x);
+*/
