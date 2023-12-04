@@ -1059,8 +1059,43 @@ while (count <= n)
 
 //* _____________________________________________________________________________________
 
+//* Example 3 ..
 
+//* Write a program in C# to verify that a string of characters has the property of “palindrome”,
+//* meaning that it remains the same whether we read it from right to left or from left to right.
+//* for example: abcddcba, acca.
 
+//* ............. Functions .............
+static string inverse(string s)
+{
+    string r = "";
+    int L = s.Length;
+    for (int i = 0; i <= L - 1; i++)
+    {
+        r = r + s[L - 1 - i];
+    }
+    return r;
+}
+//* ............. End Functions .............
+
+string s;
+
+Console.Write("Enter String: ");
+s = Console.ReadLine();
+
+string invs = inverse(s);
+
+Console.WriteLine("Your string : " + s);
+Console.WriteLine("Invers string : " + invs);
+
+if (s == invs)
+{
+    Console.WriteLine("palindrome !");
+}
+else
+{
+    Console.WriteLine("Not palindrome !");
+}
 
 
 
