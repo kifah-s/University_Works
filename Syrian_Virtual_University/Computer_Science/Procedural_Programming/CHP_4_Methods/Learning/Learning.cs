@@ -897,9 +897,65 @@ Console.WriteLine();
 
 //* -------------------------------------------------------------------
 
+//* >>>>>>>>> Examples of methods <<<<<<<<<
 
+//* Example 1:
 
+//* Write a program in C# to calculate the greatest common divisor of two integers in two different ways:
+//* 1. Euclid's algorithm method assigns the value of the remainder of the division of the largest number by the smallest to the largest number all the way to zero.
+//* 2. Algorithmic method of successive subtraction of the smallest from the largest until the two numbers are equal.
+/*
+//* 1:
+//* ............. Functions .............
+static int mgcd1(int a, int b)
+{
+    int r;
+    while ((a != 0) && (b != 0))
+    {
+        if (a > b)
+        {
+            a = a % b;
+        }
+        else
+        {
+            b = b % a;
+        }
+    }
+    r = (a != 0) ? a : b; return r;
+}
+static int mgcd2(int p, int q)
+{
+    while (p != q)
+    {
+        if (p > q)
+        {
+            p -= q;
+        }
+        else
+        {
+            q -= p;
+        }
+    }
+    return p;
+}
+//* ............. End Functions .............
 
+Console.Write("First Number : ");
+int p = Int32.Parse(Console.ReadLine());
+
+Console.Write("Second Number : ");
+int q = Int32.Parse(Console.ReadLine());
+
+if (p * q != 0)
+{
+    Console.WriteLine("mgcd of " + p + " and " + q + " = " + mgcd1(p, q));
+    Console.WriteLine("mgcd of " + p + " and " + q + " = " + mgcd2(p, q));
+}
+else
+{
+    Console.WriteLine("One of the numbers is null !");
+}
+*/
 
 
 
