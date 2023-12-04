@@ -782,3 +782,46 @@ UseLocalVariable();
 
 Console.WriteLine("local x in method ( Main ) is {0}", x);
 */
+
+//* -------------------------------------------------------------------
+
+//* >>>>>>>>>> Overloading methods <<<<<<<<<< //
+
+/*
+*   - In a single class, it is possible to declare multiple methods with the same name as long as each one has a different set of parameters (number of parameters and transaction types)..
+*     This feature is called method overloading.
+
+*   - When a loaded method is called, the compiler selects the corresponding method by examining the number patterns, and order of arguments.
+
+*   - Overloading is usually used when we need to accomplish the same task in different ways..
+*     For example, the Max method in the Math class has about 11 instances (which vary depending on the parameter types). 
+*/
+
+//* Example ..
+/*
+//* .......... Function ..........
+
+//* square method with int argument.
+static int Square(int intValue)
+{
+    Console.WriteLine("Called square with int argument: {0}", intValue);
+    return intValue * intValue;
+}
+//* end method Square with int argument.
+
+//* square method with double argument.
+static double Square(double doubleValue)
+{
+    Console.WriteLine("Called square with double argument: {0}", doubleValue);
+    return doubleValue * doubleValue;
+}
+//* // end method Square with double argument.
+
+//* .......... End Function ..........
+
+Console.WriteLine("Square of integer 7 is {0}", Square(7));
+Console.WriteLine("Square of double 7.5 is {0}", Square(7.5));
+*/
+
+//* -------------------------------------------------------------------
+
