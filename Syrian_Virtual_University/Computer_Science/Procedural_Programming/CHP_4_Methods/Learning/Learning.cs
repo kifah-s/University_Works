@@ -867,6 +867,34 @@ for (long counter = 0; counter <= 10; ++counter)
 }
 */
 
+//* Example 2 ..
+//* One of the famous problems about recursive functions is the problem of calculating the terms of the Fibonacci series.
+/*
+//* ............. Function .............
+static int Fib(int number)
+{
+    //* base case.
+    if (number == 0 || number == 1)
+    {
+        return number;
+        //* recursion step.
+    }
+    else
+    {
+        return Fib(number - 1) + Fib(number - 2);
+    }
+}
+//* end method Factorial.
+//* ............. End Function .............
+
+//* calculate the factorials of 0 through 10.
+for (int counter = 0; counter <= 10; ++counter)
+{
+    Console.Write("{0} ", Fib(counter));
+}
+Console.WriteLine();
+*/
+
 //* -------------------------------------------------------------------
 
 
