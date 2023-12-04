@@ -1016,4 +1016,55 @@ else
 
 //* _____________________________________________________________________________________
 
+//* Example 2:
+//* Write a program in C# to display the first n prime number from the set of positive integers.
+/*
+//* ............. Functions .............
+static bool is_perm(int x)
+{
+    bool result = true;
+    int i = 2;
+
+    do
+    {
+        if (x % i == 0)
+        {
+            result = false;
+        }
+        else
+        {
+            i++;
+        }
+    }
+    while ((i <= x / 2) && (result == true));
+    return result;
+}
+//* ............. End Functions .............
+
+int n, count = 0, number = 3;
+
+Console.Write("How much numbers to Display ? ");
+n = Int32.Parse(Console.ReadLine());
+
+while (count <= n)
+{
+    if (is_perm(number) == true)
+    {
+        Console.WriteLine(number);
+        count++;
+    }
+    number++;
+}
+*/
+
+//* _____________________________________________________________________________________
+
+
+
+
+
+
+
+
+
 
