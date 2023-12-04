@@ -1065,6 +1065,7 @@ while (count <= n)
 //* meaning that it remains the same whether we read it from right to left or from left to right.
 //* for example: abcddcba, acca.
 
+/*
 //* ............. Functions .............
 static string inverse(string s)
 {
@@ -1096,6 +1097,50 @@ else
 {
     Console.WriteLine("Not palindrome !");
 }
+*/
+
+//* _____________________________________________________________________________________
+
+
+//* Example 4:
+
+//* Write a method to swap the values of two passed numbers.
+//! Note: Use the concept of "overloading "and the concept of "calling by reference" to write two versions of this function,
+//!       noting the difference.
+
+/*
+//* ............. Functions .............
+static void swapByVal(int n, int m)
+{
+    int k;
+    k = n;
+    n = m;
+    m = k;
+}
+static void swapByRef(ref int n, ref int m)
+{
+    int k;
+    k = n;
+    n = m;
+    m = k;
+}
+//* ............. End Functions .............
+
+int x = 1, y = 10;
+
+Console.WriteLine("Before swap x= {0}, y= {1}", x, y);
+
+swapByVal(x, y);
+
+Console.WriteLine("After swap(Passing values) x= {0}, y= {1}", x, y);
+
+swapByRef(ref x, ref y);
+
+Console.WriteLine("After swap(Passing references) x= {0}, y= {1}", x, y);
+*/
+
+//* _____________________________________________________________________________________
+
 
 
 
