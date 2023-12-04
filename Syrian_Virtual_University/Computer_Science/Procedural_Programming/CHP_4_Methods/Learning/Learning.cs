@@ -957,10 +957,63 @@ else
 }
 */
 
+//* 2:
+//* The following is a re-solution of the same previous problem, but using recursive methods:
+/*
+//* ............. Functions .............
+static int mgcd1(int a, int b)
+{
+    if (a % b == 0)
+    {
+        return b;
+    }
+    else if (b % a == 0)
+    {
+        return a;
+    }
+    else if (a > b)
+    {
+        return mgcd1(a % b, b);
+    }
+    else
+    {
+        return mgcd1(a, b % a);
+    }
+}
+static int mgcd2(int p, int q)
+{
+    if (p == q)
+    {
+        return p;
+    }
+    else if (p > q)
+    {
+        return mgcd2(p - q, q);
+    }
+    else
+    {
+        return mgcd2(p, q - p);
+    }
+}
+//* ............. End Functions .............
 
+Console.Write("First Number : ");
+int p = Int32.Parse(Console.ReadLine());
 
+Console.Write("Second Number : ");
+int q = Int32.Parse(Console.ReadLine());
 
+if (p * q != 0)
+{
+    Console.WriteLine("mgcd of " + p + " and " + q + " = " + mgcd1(p, q));
+    Console.WriteLine("mgcd of " + p + " and " + q + " = " + mgcd2(p, q));
+}
+else
+{
+    Console.WriteLine("One of the numbers is null !");
+}
+*/
 
-
+//* _____________________________________________________________________________________
 
 
