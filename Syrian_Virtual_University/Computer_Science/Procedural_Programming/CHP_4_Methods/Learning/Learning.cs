@@ -823,5 +823,60 @@ Console.WriteLine("Square of integer 7 is {0}", Square(7));
 Console.WriteLine("Square of double 7.5 is {0}", Square(7.5));
 */
 
+//! Note: Methods cannot be differentiated by the return value pattern alone..
+//!       That is, it is not allowed to define two methods that have the same name and the same parameters, but rather differ in the return value.
+
 //* -------------------------------------------------------------------
+
+//* >>>>>>>>>> Recursion methods <<<<<<<<<< *//
+
+/*
+*    - We say that a function is recursive if its definition includes two basic components:
+
+*      1. The first component: is the primitive anchor value of the function,
+*         meaning the value or values it takes in its initial state.
+
+*      2. The second component: is the induction step (or recursive step),
+*         which is the expression of a value for the function in terms of a previous value (or values) for it.
+*/
+
+//* Example ..
+//* One of the famous problems about recursive functions is the integer factorial problem.
+/*
+//* ............. Function .............
+static long Factorial(long number)
+{
+    //* base case.
+    if (number <= 1)
+    {
+        return 1;
+        //* recursion step.
+    }
+    else
+    {
+        return number * Factorial(number - 1);
+    }
+}
+//* end method Factorial.
+//* ............. End Function .............
+
+//* calculate the factorials of 0 through 10.
+for (long counter = 0; counter <= 10; ++counter)
+{
+    Console.WriteLine("{0}! = {1}", counter, Factorial(counter));
+}
+*/
+
+//* -------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
