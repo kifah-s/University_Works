@@ -1142,8 +1142,39 @@ Console.WriteLine("After swap(Passing references) x= {0}, y= {1}", x, y);
 //* _____________________________________________________________________________________
 
 
+//* Example 5 ..
 
+//* Write a method to find the largest number, the smallest number, and the median of two values.
+/*
+//* ............. Functions .............
+//* Max, Min and Avg Function.
+static void MaxMinAvg(double x, double y, out double max, out double min, out double avg)
+{
+    if (x > y)
+    {
+        max = x;
+        min = y;
+    }
+    else
+    {
+        max = y;
+        min = x;
+    }
 
+    avg = (x + y) / 2;
+}
+//* End Max, Min and Avg Function.
+//* ............. End Functions .............
+
+//* Declare variable.
+double a = 10, b = 20, max = 0, min = 0, avg = 0;
+
+//* Call Max, Min and Avg Function.
+MaxMinAvg(a, b, out max, out min, out avg);
+
+//* Print Max, Min, Avg.
+Console.WriteLine("Max: {0}, Min: {1}, Avg: {2} ", max, min, avg);
+*/
 
 
 
