@@ -1176,6 +1176,68 @@ MaxMinAvg(a, b, out max, out min, out avg);
 Console.WriteLine("Max: {0}, Min: {1}, Avg: {2} ", max, min, avg);
 */
 
+//* _____________________________________________________________________________________
 
 
+//* >>>>>>>>>>>>>>> Exercises and activities <<<<<<<<<<<<<< *//
 
+//* Exercise 1:
+//* Write the LCM method to calculate the simple common multiple of two integers,
+//* and then use it in an application that asks the user to enter two integers and then displays the simple common multiple for them.
+/*
+//* ............. Functions .............
+//* LCM Function.
+static int LcmFun(int x, int y)
+{
+    //* 1. Find multiples of numbers.
+    //* Declare arrays for storage multiples of numbers.
+    int[] num1 = new int[50];
+    int[] num2 = new int[50];
+    //* Declare variable for calculating multiples of numbers.
+    int mulNum1 = 0;
+    int mulNum2 = 0;
+    //* Calculating multiples of numbers.
+    for (int i = 0; i < 50; i++)
+    {
+        mulNum1 = mulNum1 + x;
+        num1[i] = mulNum1;
+
+        mulNum2 = mulNum2 + y;
+        num2[i] = mulNum2;
+
+    }
+
+    //* 2. Find the simple common multiple.
+    int simpleMultiple = 0;
+    for (int i = 0; i < num1.Length; i++)
+    {
+        for (int k = 0; k < num2.Length; k++)
+        {
+            if (num1[i] == num2[k])
+            {
+                simpleMultiple = num1[i];
+                return simpleMultiple;
+            }
+        }
+    }
+
+    return simpleMultiple;
+}
+//* End LCM Function.
+//* ............. End Functions .............
+
+//* Declare variable.
+int x = 0, y = 0;
+
+Console.WriteLine("\n\nProgram calculate the simple common multiple of two integers ..\n");
+
+//* Receive value from user.
+Console.Write("Please enter first number: ");
+x = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Please enter first number: ");
+y = Convert.ToInt32(Console.ReadLine());
+
+//* Call Lcm function. 
+Console.WriteLine("\nThe simple common multiple for {0} and {1} is: {2}\n\n", x, y, LcmFun(x, y));
+*/
