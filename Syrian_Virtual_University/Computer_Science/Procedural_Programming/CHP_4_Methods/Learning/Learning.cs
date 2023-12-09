@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-
+using System.Linq;
 
 
 //* >>>>>>>>>>>>>>>>>>>>>>>> Methods <<<<<<<<<<<<<<<<<<<<<<<<<<<< *//
@@ -1313,3 +1313,28 @@ Console.WriteLine("Average Double = {0}\n\n", AverageDouble(1.1));
 
 //* _____________________________________________________________________________________
 
+
+//* Exercise 4:
+//* Write a method that takes an integer as the input parameter and returns the inverse of that number..
+//* For example, if the number is 7631, the method returns 1367.
+
+//* ............. Functions .............
+static int inverseNumber(int x)
+{
+    //* Convert the number into string.
+    string originalString = x.ToString();
+
+    //* Convert a string to an array of characters and reverse it.
+    char[] reversedArray = originalString.ToCharArray().Reverse().ToArray();
+
+    //* Convert the inverted array to a string.
+    string reversedString = new string(reversedArray);
+
+    //* Convert the string to int.
+    int reversedNumber = int.Parse(reversedString);
+
+    return reversedNumber;
+}
+//* ............. End Functions .............
+
+Console.WriteLine("\n\nInverse number: {0}\n\n", inverseNumber(123));
