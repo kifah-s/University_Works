@@ -1277,3 +1277,39 @@ Console.WriteLine("Average Double = {0}\n\n", AverageDouble(1.1, 2.2, 3.3));
 */
 
 //* _____________________________________________________________________________________
+
+//* Exercise 3:
+//* Modify the previous methods for calculating the arithmetic mean..
+//* So one parameter, two parameters, or three parameters can be passed to the method.
+/*
+//* ............. Functions .............
+int AverageInt(int a, int b = 0, int c = 0)
+{
+    int avg = 0;
+    avg = (a + b + c) / 3;
+    return avg;
+}
+
+long AverageLong(long a, long b = 0, long c = 0)
+{
+    long avg = 0;
+    avg = (a + b + c) / 3;
+    return avg;
+}
+
+double AverageDouble(double a, double b = 0, double c = 0)
+{
+    double avg = 0;
+    avg = (a + b + c) / 3;
+    return avg;
+}
+//* Important note: Optional parameters must appear after all required parameters.
+//* ............. End Functions .............
+
+Console.WriteLine("\n\nAverage Int= {0}", AverageInt(1, 2, 3));
+Console.WriteLine("Average Long = {0}", AverageLong(1000, 2000));
+Console.WriteLine("Average Double = {0}\n\n", AverageDouble(1.1));
+*/
+
+//* _____________________________________________________________________________________
+
