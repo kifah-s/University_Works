@@ -1241,3 +1241,39 @@ y = Convert.ToInt32(Console.ReadLine());
 //* Call Lcm function. 
 Console.WriteLine("\nThe simple common multiple for {0} and {1} is: {2}\n\n", x, y, LcmFun(x, y));
 */
+
+//* _____________________________________________________________________________________
+
+//* Exercise 2:
+//* Write several copies of the Average method so that the method accepts three numbers of the type int,
+//* long, or double and returns the arithmetic mean for them.
+/*
+//* ............. Functions .............
+int AverageInt(int a, int b, int c)
+{
+    int avg = 0;
+    avg = (a + b + c) / 3;
+    return avg;
+}
+
+long AverageLong(long a, long b, long c)
+{
+    long avg = 0;
+    avg = (a + b + c) / 3;
+    return avg;
+}
+
+double AverageDouble(double a, double b, double c)
+{
+    double avg = 0;
+    avg = (a + b + c) / 3;
+    return avg;
+}
+//* ............. End Functions .............
+
+Console.WriteLine("\n\nAverage Int= {0}", AverageInt(1, 2, 3));
+Console.WriteLine("Average Long = {0}", AverageLong(1000, 2000, 3000));
+Console.WriteLine("Average Double = {0}\n\n", AverageDouble(1.1, 2.2, 3.3));
+*/
+
+//* _____________________________________________________________________________________
