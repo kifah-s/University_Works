@@ -1317,7 +1317,7 @@ Console.WriteLine("Average Double = {0}\n\n", AverageDouble(1.1));
 //* Exercise 4:
 //* Write a method that takes an integer as the input parameter and returns the inverse of that number..
 //* For example, if the number is 7631, the method returns 1367.
-
+/*
 //* ............. Functions .............
 static int inverseNumber(int x)
 {
@@ -1338,3 +1338,9 @@ static int inverseNumber(int x)
 //* ............. End Functions .............
 
 Console.WriteLine("\n\nInverse number: {0}\n\n", inverseNumber(123));
+*/
+
+//* _____________________________________________________________________________________
+
+
+//* Exercise 5:
