@@ -244,3 +244,201 @@ finally
 //*     You must enter two integers. Please try again.
 //*     Re - try with a different numbers
 */
+
+
+/*
+//* Invalid catch blocks:
+
+//* When an exception is thrown within the try block, the compiler attempts to catch it with sequentially defined catch blocks
+//*     Any repetition of catching and handling an exception more than once will mean that the duplicate
+//*     catch block is meaningless and will never be executed.
+//*     Therefore, the compiler gives an error message in this case.
+
+
+//* Example:
+
+try
+{
+    //* get numerator
+    Console.Write("Please enter an integer numerator: ");
+    int numerator = Convert.ToInt32(Console.ReadLine());
+
+    //* get denominator
+    Console.Write("Please enter an integer denominator: ");
+    int denominator = Convert.ToInt32(Console.ReadLine());
+
+    //* divide the two integers, then display the result
+    int result = numerator / denominator;
+    Console.WriteLine("\nResult: {0:D} / {1:D} = {2:D}", numerator, denominator, result);
+}
+catch //* can not have both catch and catch(Exception ex).
+{
+    Console.WriteLine("Exception occurred");
+}
+catch (Exception ex) //* can not have both catch and catch(Exception ex)
+{
+    Console.WriteLine("Exception occurred");
+}
+
+//* Error: Catch clauses cannot follow the general catch clause of a try statement.
+//* It means:
+//*     1.  The exceptions caught in both catch sections are the same.
+//*     2.  The catch block must be without an Exception parameter or with a generic Exception parameter
+//*         The last block because it means handling all possible exceptions...
+//*         and therefore it must be placed as the last block to be processed
+//*         Everything that was not captured by previous blocks.
+*/
+/*
+//* The following example illustrates the last observation:
+
+try
+{
+    //* get numerator
+    Console.Write("Please enter an integer numerator: ");
+    int numerator = Convert.ToInt32(Console.ReadLine());
+
+    //* get denominator
+    Console.Write("Please enter an integer denominator: ");
+    int denominator = Convert.ToInt32(Console.ReadLine());
+
+    //* divide the two integers, then display the result
+    int result = numerator / denominator;
+    Console.WriteLine("\nResult: {0:D} / {1:D} = {2:D}", numerator, denominator, result);
+}
+catch (Exception ex) //* can not have both catch and catch(Exception ex)
+{
+    Console.WriteLine("Exception occurred");
+}
+catch (FormatException formatException)
+{
+    Console.WriteLine(formatException.Message);
+}
+catch (DivideByZeroException divideByZeroException)
+{
+    Console.WriteLine(divideByZeroException.Message);
+}
+*/
+
+
+
+/*
+//*  Nesting try-catch:
+
+//* C# allows writing nested try-catch blocks. When using nested blocks, the exception will be caught by the first catch block,
+//*     Trap follows the try block in which the exception occurred.
+
+//* Example:
+
+int divider = 0;
+
+try
+{
+    try
+    {
+        int result = 100 / divider;
+    }
+    catch
+    {
+        Console.WriteLine("Inner catch");
+    }
+}
+catch
+{
+    Console.WriteLine("Outer catch");
+}
+
+//* Output: Inner catch
+*/
+/*
+//* The following is the modified form of this program that includes this treatment:
+
+int numerator = 1, denominator = 1;
+try
+{
+    try
+    {
+        //* get numerator
+        Console.Write("Please enter an integer numerator: ");
+        numerator = Convert.ToInt32(Console.ReadLine());
+    }
+    catch (FormatException formatException)
+    {
+        Console.WriteLine("\n" + formatException.Message);
+        Console.WriteLine("numerator must be integer. Please try again.\n");
+    }
+
+    try
+    {
+        //* get denominator
+        Console.Write("Please enter an integer denominator: ");
+        denominator = Convert.ToInt32(Console.ReadLine());
+    }
+    catch (FormatException formatException)
+    {
+        Console.WriteLine("\n" + formatException.Message);
+        Console.WriteLine("denominator must be integer. Please try again.\n");
+    }
+
+    //* divide the two integers, then display the result
+    int result = numerator / denominator;
+    Console.WriteLine("\nResult: {0:D} / {1:D} = {2:D}", numerator, denominator, result);
+}
+catch (DivideByZeroException divideByZeroException)
+{
+    Console.WriteLine("\n" + divideByZeroException.Message);
+    Console.WriteLine("Zero is an invalid denominator. Please try again.\n");
+}
+finally
+{
+    Console.WriteLine("Re-try with a different numbers.");
+}
+
+//* Case 1:
+//* Please enter an integer numerator: Hello
+
+//*     The input string 'Hello' was not in a correct format.
+//*     numerator must be integer. Please try again.
+
+//* Please enter an integer denominator: 0
+
+//*     Attempted to divide by zero.
+//*     Zero is an invalid denominator. Please try again.
+
+//* Re-try with a different numbers.
+
+
+
+//* Case 2:
+//* Please enter an integer numerator: Hello
+
+//* The input string 'Hello' was not in a correct format.
+//* numerator must be integer. Please try again.
+
+//* Please enter an integer denominator: Hello
+//* 
+//* The input string 'Hello' was not in a correct format.
+//* denominator must be integer. Please try again.
+
+//* Result: 1 / 1 = 1
+//* Re-try with a different numbers.
+
+
+
+//* Case 3:
+//* Please enter an integer numerator: 0
+//* Please enter an integer denominator: 0
+
+//* Attempted to divide by zero.
+//* Zero is an invalid denominator. Please try again.
+
+//* Re-try with a different numbers.
+
+
+//* Case 4:
+//* Please enter an integer numerator: 100
+//* Please enter an integer denominator: 7
+
+//* Result: 100 / 7 = 14
+//* Re-try with a different numbers.
+*/
+
