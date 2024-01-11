@@ -518,4 +518,57 @@ catch (Exception ex)
 //* StackOverflowException                          Raised when a stack in memory overflows.
 
 //* TimeoutException                                The time interval allotted to an operation has expired.
+
+//* https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/compiler-generated-exceptions
 */
+
+
+
+//* Exercises and activities:
+
+//* 1. Write a program to solve a quadratic equation:
+//*    A x2 + B x + C = 0
+
+//* The program asks the user to enter the values A, B, C.
+//* The program then shows the roots of the equation, if any, or the phrase “no real roots”.
+//* The program must display appropriate messages if the user enters unacceptable values (for example, text instead of numbers).
+//* If any problem occurs in the entry, the program will ask the user again about the values so that they can be entered again.
+
+//* Functions ..
+static void solveQuadraticEquationFun(double a, double b, double c)
+{
+    double sel_1 = 0;
+    double sel_2 = 0;
+
+    //* Calculate delta value.    
+    double delta = b * b - 4 * a * c;
+    Console.WriteLine("\n\nDelta = {0}\n", delta);
+
+
+    //* Check delta value.    
+    if (delta > 0)
+    {
+        Console.WriteLine("The equation has \"Two Different Solutions ..\"");
+        sel_1 = (-b - Math.Sqrt(delta)) / (2 * a);
+        sel_2 = (-b + Math.Sqrt(delta)) / (2 * a);
+        Console.WriteLine("X = {0}, {1}\n\n", sel_1, sel_2);
+    }
+    else if (delta == 0)
+    {
+        Console.WriteLine("The equation has \"Two Similar Solutions ..\"");
+        sel_1 = (-b - Math.Sqrt(delta)) / (2 * a);
+        sel_2 = (-b + Math.Sqrt(delta)) / (2 * a);
+        Console.WriteLine("X = {0}, {1}\n\n", sel_1, sel_2);
+    }
+    else
+    {
+        Console.WriteLine("There are \"No Solutions\" to the equation\n\n");
+    }
+
+
+}
+//* End Functions ..
+
+int a = 2, b = -4, c = 2;
+
+solveQuadraticEquationFun(a, b, c);
