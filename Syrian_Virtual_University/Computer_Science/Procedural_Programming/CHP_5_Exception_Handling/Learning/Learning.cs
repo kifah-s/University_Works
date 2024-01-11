@@ -526,8 +526,8 @@ catch (Exception ex)
 
 //* Exercises and activities:
 
-//* 1. Write a program to solve a quadratic equation:
-//*    A x2 + B x + C = 0
+//* Exe - 1: Write a program to solve a quadratic equation:
+//*          A x2 + B x + C = 0
 
 //* The program asks the user to enter the values A, B, C.
 //* The program then shows the roots of the equation, if any, or the phrase “no real roots”.
@@ -577,6 +577,7 @@ Console.WriteLine("Please enter values (A, B, C) ..");
 double a = 0, b = 0, c = 0;
 bool numOrSen = false;
 
+//* Use while loop.
 while (numOrSen == false)
 {
     //* Use try-catch. 
@@ -605,6 +606,34 @@ while (numOrSen == false)
 solveQuadraticEquationFun(a, b, c);
 */
 
+
+//* ----------------------------------------------------------
+
+/*
+//* Exe - 2: Write a program to print the divisors of a positive integer,
+//*          taking into account the possibility of an exception for entering an invalid value (permanent, decimal, etc..).
+
+
+//* Welcome massage.
+Console.WriteLine("\nWelcome to program to print the divisors of a positive integer\n");
+
+//* Declare Variable.
+int num = 0;
+
+//* Receive Value from user.
+Console.Write("Please enter a number: ");
+num = int.Parse(Console.ReadLine());
+
+//* print the divisors of a positive integer.
+for (int i = 1; i <= num; i++)
+{
+    if (num % i == 0)
+    {
+        Console.WriteLine(i);
+    }
+}
+Console.WriteLine("\n");
+*/
 
 //* ----------------------------------------------------------
 
