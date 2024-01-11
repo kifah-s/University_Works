@@ -609,22 +609,34 @@ solveQuadraticEquationFun(a, b, c);
 
 //* ----------------------------------------------------------
 
-/*
+
 //* Exe - 2: Write a program to print the divisors of a positive integer,
 //*          taking into account the possibility of an exception for entering an invalid value (permanent, decimal, etc..).
-
-
+/*
 //* Welcome massage.
 Console.WriteLine("\nWelcome to program to print the divisors of a positive integer\n");
 
 //* Declare Variable.
 int num = 0;
 
-//* Receive Value from user.
-Console.Write("Please enter a number: ");
-num = int.Parse(Console.ReadLine());
+try
+{
+    //* Receive Value from user.
+    Console.Write("Please enter a number: ");
+    num = int.Parse(Console.ReadLine());
 
-//* print the divisors of a positive integer.
+    if (num < 1)
+    {
+        Console.WriteLine("\nPlease enter positive integer.");
+    }
+
+}
+catch
+{
+    Console.Write("\nPlease enter integer");
+}
+
+//* print the divisors of a positive integer using for loop.
 for (int i = 1; i <= num; i++)
 {
     if (num % i == 0)
@@ -636,5 +648,3 @@ Console.WriteLine("\n");
 */
 
 //* ----------------------------------------------------------
-
-
