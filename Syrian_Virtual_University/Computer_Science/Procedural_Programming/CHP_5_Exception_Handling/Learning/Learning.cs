@@ -648,3 +648,41 @@ Console.WriteLine("\n");
 */
 
 //* ----------------------------------------------------------
+
+//* Exe - 3: Write a program to calculate a student's grade point average in ten subjects so that it does not accept negative grade values.
+/*
+//* Welcome Massage.
+Console.WriteLine("\nWelcome to calculate a student's grade point average program\n");
+Console.WriteLine("\nPlease enter your grades:");
+
+//* Declare Variable.
+double avg = 0;
+double grade = 0;
+
+//* Using for loop, for receive value from user and calculate average.
+for (int i = 0; i < 10; i++)
+{
+    try
+    {
+        Console.Write("Grade {0}: ", i + 1);
+        grade = int.Parse(Console.ReadLine());
+
+        if (grade < 0)
+        {
+            throw new Exception("Mark must be positive");
+        }
+
+        avg = avg + grade;
+    }
+    catch(Exception ex)
+    {
+        Console.WriteLine(ex);
+    }
+}
+
+avg = avg / 10;
+Console.WriteLine("\nAvg: {0}\n", avg);
+*/
+
+//* ----------------------------------------------------------
+
