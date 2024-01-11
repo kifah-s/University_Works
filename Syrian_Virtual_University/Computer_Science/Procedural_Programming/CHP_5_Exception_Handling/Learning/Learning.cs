@@ -533,7 +533,7 @@ catch (Exception ex)
 //* The program then shows the roots of the equation, if any, or the phrase “no real roots”.
 //* The program must display appropriate messages if the user enters unacceptable values (for example, text instead of numbers).
 //* If any problem occurs in the entry, the program will ask the user again about the values so that they can be entered again.
-
+/*
 //* Functions ..
 static void solveQuadraticEquationFun(double a, double b, double c)
 {
@@ -542,7 +542,7 @@ static void solveQuadraticEquationFun(double a, double b, double c)
 
     //* Calculate delta value.    
     double delta = b * b - 4 * a * c;
-    Console.WriteLine("\n\nDelta = {0}\n", delta);
+    Console.WriteLine("\nDelta = {0}\n", delta);
 
 
     //* Check delta value.    
@@ -569,6 +569,43 @@ static void solveQuadraticEquationFun(double a, double b, double c)
 }
 //* End Functions ..
 
-int a = 2, b = -4, c = 2;
+//* Welcome massage.
+Console.WriteLine("\nWelcome to the program for solving a quadratic equation\n");
+Console.WriteLine("Please enter values (A, B, C) ..");
+
+//* Declare variables.
+double a = 0, b = 0, c = 0;
+bool numOrSen = false;
+
+while (numOrSen == false)
+{
+    //* Use try-catch. 
+    try
+    {
+        //* Receive value from user.
+        Console.Write("A: ");
+        a = double.Parse(Console.ReadLine());
+
+        Console.Write("B: ");
+        b = double.Parse(Console.ReadLine());
+
+        Console.Write("C: ");
+        c = double.Parse(Console.ReadLine());
+
+        numOrSen = true;
+    }
+    catch
+    {
+        Console.WriteLine("Please enter a numerical value ..");
+
+        numOrSen = false;
+    }
+}
 
 solveQuadraticEquationFun(a, b, c);
+*/
+
+
+//* ----------------------------------------------------------
+
+
