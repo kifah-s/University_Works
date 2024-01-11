@@ -526,6 +526,8 @@ catch (Exception ex)
 
 //* Exercises and activities:
 
+
+
 //* Exe - 1: Write a program to solve a quadratic equation:
 //*          A x2 + B x + C = 0
 
@@ -606,9 +608,7 @@ while (numOrSen == false)
 solveQuadraticEquationFun(a, b, c);
 */
 
-
 //* ----------------------------------------------------------
-
 
 //* Exe - 2: Write a program to print the divisors of a positive integer,
 //*          taking into account the possibility of an exception for entering an invalid value (permanent, decimal, etc..).
@@ -729,5 +729,6 @@ for (int i = 0; i < 10; i++)
 avg = avg / 10;
 Console.WriteLine("\nAvg: {0}\n", avg);
 */
+
 //* ----------------------------------------------------------
 
