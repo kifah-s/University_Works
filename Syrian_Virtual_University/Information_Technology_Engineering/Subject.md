@@ -1,1 +1,1 @@
-#### Entrepreneurship_&_SMEs_Management
+#### Fundamentals_of_Management
