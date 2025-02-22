@@ -1,1 +1,0 @@
-## Entrepreneurship_&_SMEs_Management
